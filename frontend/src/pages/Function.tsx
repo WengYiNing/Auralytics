@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import '../styles/Function.css';
 import { useAuth } from '../AuthContext'; 
 
-const SpotifyMusicInsights: React.FC = () => {
+const FunctionPage: React.FC = () => {
   const { isLoggedIn } = useAuth(); 
   const navigate = useNavigate();
 
@@ -26,7 +26,7 @@ const SpotifyMusicInsights: React.FC = () => {
           <Link to="/eras">Top eras</Link>
         </div>
       </div>
-      <div className='fuction-footer'>
+      <div className='function-footer'>
         <div className="content">
           <div className='trade-mark-and-disclaimer'>
             <p>
@@ -47,4 +47,4 @@ const SpotifyMusicInsights: React.FC = () => {
   );
 }
 
-export default SpotifyMusicInsights;
+export default FunctionPage;
