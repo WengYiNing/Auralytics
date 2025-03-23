@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import '../styles/Header.css';
 import { useAuth } from '../AuthContext';
+const BASE_URL = process.env.REACT_APP_API_BASE;
 
 const Header: React.FC = () => {
   const { isLoggedIn, logout } = useAuth(); 
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const handleLogin = () => {
-    window.location.href = 'https://auralyticsmusic.com/.netlify/functions/login';
+    window.location.href = `${BASE_URL}/login`;
   };
 
   const handleLogout = () => {
