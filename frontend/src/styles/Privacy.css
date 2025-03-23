@@ -1,0 +1,31 @@
+.privacy-content{
+  margin:0px 220px 0px 220px;
+}
+
+.privacy-content h2{
+  margin-top: 15px;
+  font-size: 32px;
+}
+
+.privacy-content h4{
+  font-size: 18px;
+}
+
+@media screen and (max-width: 600px)
+{
+  .privacy-content{
+    margin:0px 20px 0px 20px;
+  }
+  .privacy-content h2{
+    margin-top: 15px;
+    font-size: 22px;
+  }
+  
+  .privacy-content h4{
+    font-size: 16px;
+    margin: 10px 0px;
+  }
+  .privacy-content p{
+    font-size: 12px;
+  }
+}

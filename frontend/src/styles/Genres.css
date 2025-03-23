@@ -1,0 +1,157 @@
+.header2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header2 h3 {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 220px;
+}
+
+.time-range {
+    margin-right: 214px;
+    display: flex;
+    gap: 10px;
+}
+
+.time-range button {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    background: none;
+    border: none;
+    color: #989797;
+}
+
+.time-range button:hover {
+    color: black;
+}
+
+.time-range button:visited {
+    color: black;
+}
+
+.time-range button.active {
+    color: black;
+}
+
+.time-range button.inactive {
+    color: #989797;
+}
+
+.genre-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 42px;
+}
+
+.genre-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.genre-name {
+    width: 200px;
+    font-size: 18px;
+    color: black;
+    margin-right: 16px;
+    text-align: center;
+}
+
+.progress-bar-container {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 0px;
+    height: 70px;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: rgb(27, 82, 46);
+    border-radius: 0px;
+    transition: width 0.3s ease-in-out;
+}
+
+.artist-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.genre-index{
+    width: 6.42px; 
+    margin-left: 180px;
+    margin-right: 25px;
+}
+
+.spotify-logo{
+    margin-right: 230px;
+    width: 22px;
+    height: 22px;
+}
+
+.artistImage-container {
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width: 600px)
+{
+    .header2 h3 {
+        font-size: 15px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    .time-range button {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 10px;
+        cursor: pointer;
+        display: inline-block;
+        background: none;
+        border: none;
+        color: #989797;
+    }
+
+    .time-range {
+        margin-right: 14px;
+        display: flex;
+        gap: 2px;
+    }
+    .genre-index{
+        margin-left: -20px;
+        margin-right: 10px;
+        width: 6.42px; 
+        font-size: 12px;
+    }
+    .genre-name {
+        font-size: 10px;
+        color: black;
+        margin-bottom: 2px;
+        margin-right: 5px;
+        width: 100px;
+        text-align: left;
+    }
+
+    .spotify-logo{
+        margin-right: 20px;
+        width: 22px;
+        height: 22px;
+    }
+    .artist-image {
+        border-radius: 4px;
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        margin:0px 15px 0px 0px;
+    }
+}

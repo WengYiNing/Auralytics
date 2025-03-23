@@ -1,0 +1,66 @@
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+.start-content {
+  margin: 180px 180px;
+  height: auto; 
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.start-content p {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  margin-bottom: 80px; 
+  padding-top: 50px;
+  text-align: left;
+}
+
+.please-login {
+  text-align: right;
+  font-size: 15px;
+  text-decoration: underline;
+  cursor: pointer;
+  color: gray;
+  display: block; 
+  animation: blink 6s infinite;
+}
+
+.please-login:hover {
+  color: gray;
+}
+
+.please-login:visited {
+  color: gray;
+}
+
+@media screen and (max-width: 600px)
+{
+  .start-content {
+    margin: 100px 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .start-content p {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    margin-bottom: 80px; 
+    padding-top: 50px;
+    text-align: left;
+  }
+  .please-login {
+    font-size: 10px;
+  }
+}

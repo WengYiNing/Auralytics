@@ -1,0 +1,167 @@
+.header2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header2 h3 {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 220px;
+}
+
+.time-range {
+    margin-right: 214px;
+    display: flex;
+    gap: 10px;
+}
+
+.time-range button {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    background: none;
+    border: none;
+    color: #989797;
+}
+
+.time-range button:hover {
+    color: black;
+}
+
+.time-range button:visited {
+    color: black;
+}
+
+.time-range button.active {
+    color: black;
+}
+
+.time-range button.inactive {
+    color: #989797;
+}
+
+.track-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.album-image {
+    border-radius: 4px;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin:0px 20px 0px 0px;
+}
+
+.track-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1; 
+}
+
+.track-name {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 2px;
+}
+
+.track-album {
+    font-size: 14px;
+    color: #989797;
+    margin-top: 2px;
+    margin-bottom: 0px; 
+}
+
+.track-artist {
+    font-size: 16px;
+    color: black;
+    margin-left: auto;
+    margin-right: 58px;
+    text-align: right;
+}
+
+.track-rank{
+    margin-left: 180px;
+    margin-right: 25px;
+    width: 6.42px; 
+}
+
+.spotify-logo-container {
+    display: flex;
+    align-items: center; 
+    margin-top: 2px;
+}
+
+.spotify-logo{
+    margin-right: 230px;
+    width: 22px;
+    height: 22px;
+}
+
+@media screen and (max-width: 600px)
+{
+    .header2 h3 {
+        font-size: 15px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    .time-range button {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 10px;
+        cursor: pointer;
+        display: inline-block;
+        background: none;
+        border: none;
+        color: #989797;
+    }
+
+    .time-range {
+        margin-right: 14px;
+        display: flex;
+        gap: 2px;
+    }
+    .track-rank{
+        margin-left: -20px;
+        margin-right: 10px;
+        width: 6.42px; 
+        font-size: 12px;
+    }
+    .track-name {
+        font-size: 10px;
+        color: black;
+        margin-bottom: 2px;
+    }
+    
+    .track-album {
+        font-size: 6px;
+        color: #989797;
+        margin-top: 2px;
+        margin-bottom: 0px; 
+    }
+    .track-artist {
+        font-size: 8px;
+        color: black;
+        margin-left: auto;
+        margin-right: 18px;
+        text-align: right;
+    }
+    .spotify-logo{
+        margin-right: 20px;
+        width: 22px;
+        height: 22px;
+    }
+    .album-image {
+        border-radius: 4px;
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        margin:0px 10px 0px 0px;
+    }
+}

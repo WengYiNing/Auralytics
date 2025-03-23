@@ -1,0 +1,136 @@
+.instant-analysis{
+margin: 185px 220px 135px 220px;
+}
+
+.instant-analysis h5{
+font-weight: bold;
+font-size:19px;
+margin:16px 0px 12px 30px;
+}
+
+.boxes-content1 {
+    display: flex;
+    align-items: center;
+justify-content: space-between;
+}
+
+.boxes-content1 a{
+display: flex;       
+align-items: center;
+ justify-content: center;
+flex: 1 1 15%;
+height: 120px;
+border-style: solid;
+  border-width: 1.3px;
+margin: 30px 10px 30px;
+padding: 30px;
+text-align: center;
+color: black;
+text-decoration: none;
+border-radius: 8px;
+}
+
+.boxes-content1 a:hover {
+  background-color: rgb(27, 82, 46);
+  color: white; 
+  border-color: white; 
+  transform: scale(1.05);
+}
+
+.sign-up {
+display: block;
+    text-align: right; 
+margin: 0px 30px 10px 0px; 
+color: black;
+text-decoration: underline;
+font-style: italic;
+}
+
+.sign-up:hover {
+    color: black;
+}
+
+.sign-up:visited {
+    color: black; 
+}
+
+.fuction-footer {
+    position: fixed;
+    bottom: 3px;
+    left: 0;
+    right: 0;
+    padding: 10px 0; 
+    background-color: #ffffff; 
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    margin: 0px 220px;
+  }
+  
+  .fuction-footer .content {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  .trade-mark-and-disclaimer, .privacy-and-contact {
+    font-size: 12px;
+    color: #989797;
+  }
+  
+  .policy-and-trademark {
+    text-align: right;
+    padding-bottom: 3px;
+  }
+  
+  .policy-and-trademark a {
+    color: #989797;
+    font-size: 12px;
+    margin: 2px 0;
+    text-decoration: none;
+  }
+  
+  .policy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff; 
+    width: 160px;
+  }
+  
+  .trademark {
+    font-size: 12px;
+    margin: 0;
+  }
+  
+  @media screen and (max-width: 600px)
+{
+  .fuction-footer {
+    position: fixed;
+    bottom: 3px;
+    left: 0;
+    right: 0;
+    padding: 10px 0; 
+    background-color: #ffffff; 
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    margin: 0px 20px;
+  }
+  .instant-analysis{
+    margin: 25px 20px 135px 20px;
+    }
+
+    .boxes-content1 a{
+      width: 120px;
+      margin: 6px 10px 6px;
+      }
+
+      .boxes-content1 {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+}
