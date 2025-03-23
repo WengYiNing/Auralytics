@@ -1,21 +1,13 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import '../styles/App.css';
-import { useAuth } from '../AuthContext';
 import ScrollHint from '../components/ScrollHint'; 
+const BASE_URL = process.env.REACT_APP_BACKEND_URL;
 
 const App: React.FC = () => {
-  const { isLoggedIn } = useAuth(); 
-  const navigate = useNavigate();
   const boxesRef = useRef<HTMLDivElement | null>(null);
   const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    if (!isLoggedIn) {
-      navigate('/');
-    }
-  }, [isLoggedIn, navigate]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -42,7 +34,7 @@ const App: React.FC = () => {
           Explore your top tracks, artists, genres, and musical eras. Dive into your personalized Spotify insights!
         </p>
 
-        <a href="https://auralyticsmusic.com/.netlify/functions/login" className="please-login">
+        <a href="`${BASE_URL}/login`" className="please-login">
           Login with your Spotify account to start...
         </a>
       </div>
