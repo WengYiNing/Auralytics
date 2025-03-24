@@ -12,46 +12,62 @@ const eraRoutes = require('./routes/eraRoutes');
 const app = express();
 const PORT = process.env.PORT || 8888;
 
-const client = redis.createClient({
-  url: 'redis://localhost:6379'
-});
+const initializeRedis = () => {
+  const client = redis.createClient({
+    url: process.env.REDIS_URL
+  });
 
-client.on('error', (err) => console.log('Redis Client Error', err));
+  client.on('error', (err) => {
+    console.error('Redis Client Error:', err);
+  });
 
-async function startServer() {
-    try {
-        await client.connect();
-        console.log('Connected to Redis');
+  return client;
+};
 
-        app.use(cors({
-            origin: ['http://localhost:3000'],
-            methods: ['GET', 'POST', 'DELETE', 'UPDATE', 'PUT', 'PATCH'],
-            credentials: true
-        }));
+const configureCors = () => {
+  return cors({
+    origin: [process.env.FRONTEND_URL],
+    methods: ['GET', 'POST', 'DELETE', 'UPDATE', 'PUT', 'PATCH'],
+    credentials: true
+  });
+};
 
-        app.use(express.json());
+const configureApp = (app, client) => {
+  app.use(configureCors());
+  app.use(express.json());
 
-        app.use('/api', userRoutes);
-        app.use('/api', trackRoutes(client)); 
-        app.use('/api', artistsRoutes(client));
-        app.use('/api', albumsRoutes(client));
-        app.use('/api', genresRoutes(client));
-        app.use('/api', eraRoutes(client));
+  app.use(userRoutes);
+  app.use(trackRoutes(client)); 
+  app.use(artistsRoutes(client));
+  app.use(albumsRoutes(client));
+  app.use(genresRoutes(client));
+  app.use(eraRoutes(client));
 
-        app.use((req, res, next) => {
-            console.log('Incoming Request:', req.method, req.path);
-            console.log('Headers:', req.headers);
-            next();
-        });
+  app.use((req, res, next) => {
+    console.log('Incoming Request:', req.method, req.path);
+    console.log('Headers:', req.headers);
+    next();
+  });
+};
 
-        app.listen(PORT, () => {
-            console.log(`Server is running on http://localhost:${PORT}`);
-        });
-    } catch (error) {
-        console.error('Failed to connect to Redis or start server:', error);
-    }
-}
+const startServer = async () => {
+  const client = initializeRedis();
+  
+  try {
+    await client.connect();
+    console.log('Connected to Redis');
+
+    configureApp(app, client);
+
+    app.listen(PORT, () => {
+      console.log(`Server is running on http://localhost:${PORT}`);
+    });
+
+  } catch (error) {
+    console.error('Failed to connect to Redis or start server:', error);
+  }
+};
 
 startServer();
 
-module.exports = client;
+module.exports = initializeRedis;
