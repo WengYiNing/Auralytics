@@ -6,6 +6,7 @@ import axios from 'axios';
 import { useAuth } from '../AuthContext';
 import { useNavigate } from 'react-router-dom';
 import spotifyLogo from '../image/Spotify_Primary_Logo_RGB_Black.png';
+const BASE_URL = process.env.REACT_APP_BACKEND_URL;
 
 interface Decade {
     decade: string;
@@ -28,13 +29,11 @@ const MostListenedDecades: React.FC = () => {
             const token = localStorage.getItem('access_token');
             const refreshToken = localStorage.getItem('refresh_token'); 
             const userId = localStorage.getItem('userId');
-            const response = await axios.get(`https://auralyticsmusic.com/.netlify/functions/track-decades/${userId}/${range}`, {
+            const response = await axios.get(`${BASE_URL}/track-decades/${userId}/${range}`, {
                 headers: { 'Authorization': `Bearer ${token}`,
                 'x-refresh-token': refreshToken
             }
             });
-
-        console.log("Response data from backend:", response.data);
     
             const data = response.data;
             if (data.decadeScores && data.topSongsByDecade) {
@@ -73,7 +72,6 @@ const MostListenedDecades: React.FC = () => {
 
     const handleRangeClick = (range: string) => {
         setCurrentRange(range);
-        fetchDecades(range);
     };
 
     const maxScore = decades.length > 0 ? Math.max(...decades.map(d => d.score)) : 1;
