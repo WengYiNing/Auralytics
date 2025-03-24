@@ -6,6 +6,7 @@ import axios from 'axios';
 import { useAuth } from '../AuthContext'; 
 import { useNavigate } from 'react-router-dom';
 import spotifyLogo from '../image/Spotify_Primary_Logo_RGB_Black.png';
+const BASE_URL = process.env.REACT_APP_BACKEND_URL;
 
 interface Track {
     trackId: string;
@@ -27,7 +28,7 @@ const MostListenedTracks: React.FC = () => {
             const token = localStorage.getItem('access_token');
             const refreshToken = localStorage.getItem('refresh_token'); 
             const userId = localStorage.getItem('userId');
-            const response = await axios.get(`https://auralyticsmusic.com/.netlify/functions/top-tracks/${userId}/${range}`, {
+            const response = await axios.get(`${BASE_URL}/top-tracks/${userId}/${range}`, {
                 headers: { 'Authorization': `Bearer ${token}`,
                 'x-refresh-token': refreshToken
             }
@@ -59,7 +60,6 @@ const MostListenedTracks: React.FC = () => {
 
     const handleRangeClick = (range: string) => {
         setCurrentRange(range);
-        fetchTracks(range);
     };
 
     return (
