@@ -2,13 +2,12 @@ const express = require('express');
 const cors = require('cors');
 const redis = require('redis');
 require('dotenv').config();
-const userRoutes = require('./Routes/userRoutes');
-const trackRoutes = require('./Routes/trackRoutes');
-const artistsRoutes = require('./Routes/artistsRoutes');
-const albumsRoutes = require('./Routes/albumsRoutes');
-const genresRoutes = require('./Routes/genreRoutes');
-const emotionRoutes = require('./Routes/emotionRoutes');
-const eraRoutes = require('./Routes/eraRoutes');
+const userRoutes = require('./routes/userRoutes');
+const trackRoutes = require('./routes/trackRoutes');
+const artistsRoutes = require('./routes/artistsRoutes');
+const albumsRoutes = require('./routes/albumsRoutes');
+const genresRoutes = require('./routes/genreRoutes');
+const eraRoutes = require('./routes/eraRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 8888;
@@ -21,7 +20,6 @@ client.on('error', (err) => console.log('Redis Client Error', err));
 
 async function startServer() {
     try {
-        // 連接 Redis
         await client.connect();
         console.log('Connected to Redis');
 
@@ -38,7 +36,6 @@ async function startServer() {
         app.use('/api', artistsRoutes(client));
         app.use('/api', albumsRoutes(client));
         app.use('/api', genresRoutes(client));
-        app.use('/api', emotionRoutes(client));
         app.use('/api', eraRoutes(client));
 
         app.use((req, res, next) => {
