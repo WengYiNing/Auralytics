@@ -7,6 +7,7 @@ import { useAuth } from '../AuthContext';
 import { useNavigate } from 'react-router-dom';
 import { FaInfoCircle } from 'react-icons/fa';
 import spotifyLogo from '../image/Spotify_Primary_Logo_RGB_Black.png';
+const BASE_URL = process.env.REACT_APP_BACKEND_URL;
 
 interface InfoModalProps {
     text: string;
@@ -32,7 +33,7 @@ const InfoModal: React.FC<InfoModalProps> = ({ text }) => {
 interface Artists {
     artistId: string;
     name: string;
-    genres: string;
+    genres: string[];
     popularity: string;
     artistImageUrl: string;
     logoUrl: string;
@@ -50,7 +51,7 @@ const MostListenedArtists: React.FC = () => {
             const token = localStorage.getItem('access_token');
             const refreshToken = localStorage.getItem('refresh_token'); 
             const userId = localStorage.getItem('userId');
-            const response = await axios.get(`https://auralyticsmusic.com/.netlify/functions/top-artists/${userId}/${range}`, {
+            const response = await axios.get(`${BASE_URL}/top-artists/${userId}/${range}`, {
                 headers: { 'Authorization': `Bearer ${token}`,
                 'x-refresh-token': refreshToken
             }
@@ -81,7 +82,6 @@ const MostListenedArtists: React.FC = () => {
 
     const handleRangeClick = (range: string) => {
         setCurrentRange(range);
-        fetchArtists(range);
     };
 
     return (
