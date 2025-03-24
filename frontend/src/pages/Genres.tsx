@@ -6,6 +6,7 @@ import axios from 'axios';
 import { useAuth } from '../AuthContext';
 import { useNavigate } from 'react-router-dom';
 import spotifyLogo from '../image/Spotify_Primary_Logo_RGB_Black.png';
+const BASE_URL = process.env.REACT_APP_BACKEND_URL;
 
 const MostListenedGenres: React.FC = () => {
     const [genres, setGenres] = useState<{ genre: string; score: number; logoUrl: string; artistImageUrl: string}[]>([]);
@@ -18,7 +19,7 @@ const MostListenedGenres: React.FC = () => {
             const token = localStorage.getItem('access_token');
             const refreshToken = localStorage.getItem('refresh_token'); 
             const userId = localStorage.getItem('userId');
-            const response = await axios.get(`https://auralyticsmusic.com/.netlify/functions/top-genres/${userId}/${range}`, {
+            const response = await axios.get(`${BASE_URL}/top-genres/${userId}/${range}`, {
                 headers: { 'Authorization': `Bearer ${token}`,
                 'x-refresh-token': refreshToken
             }
@@ -49,10 +50,9 @@ const MostListenedGenres: React.FC = () => {
 
     const handleRangeClick = (range: string) => {
         setCurrentRange(range);
-        fetchGenres(range);
     };
 
-    const maxScore = Math.max(...genres.map(g => g.score)); 
+    const maxScore = genres.length > 0 ? Math.max(...genres.map(g => g.score)) : 1;
 
     return (
         <div>
