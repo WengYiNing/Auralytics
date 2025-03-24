@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from './AuthContext'; 
+const BASE_URL = process.env.REACT_APP_BACKEND_URL;
 
 const Callback: React.FC = () => {
   const { login } = useAuth(); 
@@ -11,7 +12,7 @@ const Callback: React.FC = () => {
     const code = params.get('code');
 
     if (code) {
-      fetch('https://auralyticsmusic.com/.netlify/functions/token-exchange', { 
+      fetch(`${BASE_URL}/token-exchange`, { 
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ code })
