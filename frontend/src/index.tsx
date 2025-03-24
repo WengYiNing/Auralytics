@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/index.css';
-import App from './pages/App';
+import LandingPage from './pages/LandingPage';
 import FunctionPage from './pages/Function';
 import Tracks from './pages/Tracks';
 import Artists from './pages/Artists';
@@ -20,7 +20,7 @@ const root = ReactDOM.createRoot(
 
 const Main: React.FC = () => {
   const { isLoggedIn } = useAuth();
-  return isLoggedIn ? <FunctionPage /> : <App />;
+  return isLoggedIn ? <FunctionPage /> : <LandingPage />;
 };
 
 root.render(
@@ -38,7 +38,7 @@ root.render(
           <Route path="/eras" element={<Eras />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/TermsOfUse" element={<TermsOfUse />} />
-          {/* 如果用戶未登入並訪問受限路徑，重定向到 / */}
+
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Router>
