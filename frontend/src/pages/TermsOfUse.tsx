@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../styles/Privacy.css';
 
-const App: React.FC = () => {
+const TermsOfUse: React.FC = () => {
 
   return (
     <div>
@@ -81,4 +81,4 @@ const App: React.FC = () => {
   );
 }
 
-export default App;
+export default TermsOfUse;
