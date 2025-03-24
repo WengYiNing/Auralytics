@@ -1,4 +1,5 @@
 import React, { createContext, useState, useContext, useEffect, ReactNode } from 'react';
+const BASE_URL = process.env.REACT_APP_API_BASE;
 
 interface AuthContextType {
   isLoggedIn: boolean;
@@ -11,7 +12,7 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 export const useAuth = () => {
   const context = useContext(AuthContext);
   if (!context) {
-    throw new Error('useAuth 必須在 AuthProvider 內使用');
+    throw new Error('useAuth must be used in AuthProvider');
   }
   return context;
 };
@@ -39,7 +40,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     localStorage.removeItem('userId');
     setIsLoggedIn(false);
     
-    window.location.href = 'https://auralyticsmusic.com/.netlify/functions/logout';
+    window.location.href = `${BASE_URL}/logout`;
 
   };
   
