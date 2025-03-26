@@ -4,7 +4,7 @@ const axios = require('axios');
 module.exports = function(client) {
     const router = express.Router();
 
-    const fetchTopTracks = async (timeRange, accessToken, userId) => {
+    const fetchTopAlbums = async (timeRange, accessToken, userId) => {
         const cacheKey = `${userId}:top-albums:${timeRange}`;
         console.log("Fetching from cache with key: ", cacheKey);
 
@@ -48,6 +48,8 @@ module.exports = function(client) {
                 .slice(0, 10); 
 
             await client.setEx(cacheKey, 3600, JSON.stringify(sortedAlbums)); 
+
+            return sortedAlbums;
         } catch (error) {
             console.error("Failed to fetch data:", error);
             throw error;
@@ -63,7 +65,7 @@ module.exports = function(client) {
         }
     
         try {
-            const topAlbums = await fetchTopTracks(timeRange, accessToken, userId);
+            const topAlbums = await fetchTopAlbums(timeRange, accessToken, userId);
             res.json(topAlbums);
         } catch (error) {
             console.error("Failed to retrieve and update top albums:", error.message);
