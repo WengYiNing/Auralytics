@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from './AuthContext'; 
-const BASE_URL = process.env.REACT_APP_BACKEND_URL;
+const BASE_URL = process.env.REACT_APP_API_BASE;
 
 const Callback: React.FC = () => {
   const { login } = useAuth(); 
