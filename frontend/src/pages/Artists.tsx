@@ -118,7 +118,7 @@ const MostListenedArtists: React.FC = () => {
                     onMouseLeave={() => setModalVisible(false)}
                     style={{ position: 'relative', display: 'inline-block' }}
                 >
-                    <FaInfoCircle className='circle' />
+                    {FaInfoCircle({ className: 'circle' })}
                     {isModalVisible && (
                         <InfoModal text="The popularity of the artist is between 0 and 100, with 100 being the most popular. It is calculated from the popularity of all the artist's tracks." />
                     )}
