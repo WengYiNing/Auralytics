@@ -4,6 +4,7 @@ const axios = require('axios');
 module.exports = function(client) {
     const router = express.Router();
 
+    //Fetch Top Tracks to get the albums information.
     const fetchTopTracks = async (timeRange, accessToken, userId) => {
         const cacheKey = `${userId}:top-tracks:${timeRange}`;
         console.log("Fetching top tracks from cache with key: ", cacheKey);
@@ -36,6 +37,7 @@ module.exports = function(client) {
         }
     };
 
+    //Fetch albums to get the eras distribution.
     const fetchAlbumInfo = async (albumId, accessToken) => {
         const cacheKey = `album-info:${albumId}`;
         try {
@@ -119,7 +121,7 @@ module.exports = function(client) {
         try {
             let topTracks, validTracks, topDecades, sixMonthDecades, oneMonthDecades;
             if (timeRange === 'short_term') {
-                // 只處理一個月的數據
+                // Only needs to deal with data in a month.
                 topTracks = await fetchTopTracks('short_term', accessToken, userId);
                 const oneMonthTracksWithReleaseDate = await Promise.all(topTracks.map(async (track) => {
                     try {
@@ -132,7 +134,7 @@ module.exports = function(client) {
                 validTracks = oneMonthTracksWithReleaseDate.filter(track => track !== null);
                 topDecades = calculateTopDecades(validTracks);
             } else if (timeRange === 'medium_term') {
-                // 先處理六個月的數據
+                // Deal with data in six months first.
                 topTracks = await fetchTopTracks('medium_term', accessToken, userId);
                 const sixMonthTracksWithReleaseDate = await Promise.all(topTracks.map(async (track) => {
                     try {
@@ -145,7 +147,7 @@ module.exports = function(client) {
                 validTracks = sixMonthTracksWithReleaseDate.filter(track => track !== null);
                 topDecades = calculateTopDecades(validTracks);
 
-                // 如果六個月的年代數少於5，從一個月補充
+                // If the eras in six months are less than 5, then supple from data in a month.
                 if (Object.keys(topDecades.decadeScores).length < 5) {
                     oneMonthTracks = await fetchTopTracks('short_term', accessToken, userId);
                     const oneMonthTracksWithReleaseDate = await Promise.all(oneMonthTracks.map(async (track) => {
@@ -161,7 +163,7 @@ module.exports = function(client) {
                     topDecades = mergeDecades(topDecades.decadeScores, oneMonthDecades.decadeScores, 5, topDecades.topSongsByDecade, oneMonthDecades.topSongsByDecade);
                 }
             } else if (timeRange === 'long_term') {
-                // 先處理十二個月的數據
+                // Deal with data in twelve months first.
                 topTracks = await fetchTopTracks('long_term', accessToken, userId);
                 const twelveMonthTracksWithReleaseDate = await Promise.all(topTracks.map(async (track) => {
                     try {
@@ -174,7 +176,7 @@ module.exports = function(client) {
                 validTracks = twelveMonthTracksWithReleaseDate.filter(track => track !== null);
                 topDecades = calculateTopDecades(validTracks);
 
-                // 如果十二個月的年代數少於5，先從六個月補充，不足再從一個月補充
+                // If the eras in twelve months are less than 5, then supple from data in six month.
                 if (Object.keys(topDecades.decadeScores).length < 5) {
                     sixMonthTracks = await fetchTopTracks('medium_term', accessToken, userId);
                     const sixMonthTracksWithReleaseDate = await Promise.all(sixMonthTracks.map(async (track) => {
@@ -189,6 +191,7 @@ module.exports = function(client) {
                     sixMonthDecades = calculateTopDecades(validTracks);
                     topDecades = mergeDecades(topDecades.decadeScores, sixMonthDecades.decadeScores, 5, topDecades.topSongsByDecade, sixMonthDecades.topSongsByDecade);
 
+                    //If still not enough, supple from data in one month.
                     if (Object.keys(topDecades.decadeScores).length < 5) {
                         oneMonthTracks = await fetchTopTracks('short_term', accessToken, userId);
                         const oneMonthTracksWithReleaseDate = await Promise.all(oneMonthTracks.map(async (track) => {
