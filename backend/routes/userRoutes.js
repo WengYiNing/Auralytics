@@ -54,32 +54,15 @@ router.get('/callback', async (req, res) => {
 
         const { id, email, display_name } = userResponse.data;
 
-        const user = await User.findOneAndUpdate(
-            { spotifyId: id }, 
-            {
-                username: display_name || 'Unknown', 
-                email: email || 'no-email@example.com', 
-                spotifyAccessToken: access_token,
-                refreshToken: refresh_token,
-                accessTokenExpires: new Date(Date.now() + expires_in * 1000)
-            },
-            { new: true, upsert: true, setDefaultsOnInsert: true } 
-        );
-
-        console.log('User updated or created:', user);
-
-        const redirectUrl = `http://localhost:3000/callback?access_token=${encodeURIComponent(access_token)}&refresh_token=${encodeURIComponent(refresh_token)}&user_id=${encodeURIComponent(id)}`;
-
+        const redirectBase = process.env.FRONTEND_URL || 'http://localhost:3000';
+        const redirectUrl = `${redirectBase}/callback?access_token=${encodeURIComponent(access_token)}&refresh_token=${encodeURIComponent(refresh_token)}&user_id=${encodeURIComponent(id)}`;
         console.log('Redirecting to:', redirectUrl);
-
         res.redirect(redirectUrl);
     } catch (error) {
         console.error('Error during Spotify interaction:', error.response ? error.response.data : error.message);
         res.status(500).send('Failed to handle Spotify data');
     }
 });
-
-const processedCodes = new Set();
 
 router.post('/token-exchange', async (req, res) => {
     const { code } = req.body;
@@ -89,12 +72,6 @@ router.post('/token-exchange', async (req, res) => {
         console.error('Authorization code is missing');
         return res.status(400).json({ error: 'Authorization code is required' });
     }
-
-    if (processedCodes.has(code)) {
-        return res.status(400).json({ error: 'Authorization code has already been used' });
-    }
-
-    processedCodes.add(code);
 
     try {
         console.log('Exchanging code for tokens...');
@@ -134,7 +111,7 @@ router.post('/token-exchange', async (req, res) => {
 
 router.get('/logout', (req, res) => {
     req.session = null;
-    res.redirect('http://localhost:3000'); 
+    res.redirect(process.env.FRONTEND_URL || 'http://localhost:3000'); 
 });
 
 module.exports = router;
