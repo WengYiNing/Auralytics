@@ -39,23 +39,34 @@ module.exports = function(client) {
         try {
             const topArtists = await fetchTopGenres(timeRange, accessToken, userId);
 
-            const genreScores = {};
+            const genreData = {};
             topArtists.forEach((artist, index) => {
-                const score = 50 - index; 
+                const score = 50 - index;
+
                 artist.genres.forEach(genre => {
-                    if (genreScores[genre]) {
-                        genreScores[genre] += score; 
+                    if (genreData[genre]) {
+                        genreData[genre].score += score;
                     } else {
-                        genreScores[genre] = score; 
+                        genreData[genre] = {
+                            score: score,
+                            image: artist.images?.[0]?.url || null,
+                            url: artist.external_urls?.spotify || null
+                        };
                     }
                 });
             });
 
-            const sortedGenres = Object.entries(genreScores)
-                .map(([genre, score]) => ({ genre, score }))
+            const sortedGenres = Object.entries(genreData)
+                .map(([genre, data]) => ({
+                    genre,
+                    score: data.score,
+                    artistImageUrl: data.image,
+                    logoUrl: data.url
+                }))
                 .sort((a, b) => b.score - a.score);
 
             res.json(sortedGenres);
+
         } catch (error) {
             console.error("Failed to retrieve and update top genres:", error.message);
             res.status(500).send("Failed to retrieve and update top genres: " + error.message);
