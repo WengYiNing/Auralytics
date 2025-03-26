@@ -1,5 +1,5 @@
 import React, { createContext, useState, useContext, useEffect, ReactNode } from 'react';
-const BASE_URL = process.env.REACT_APP_API_BASE;
+const BASE_URL = process.env.REACT_APP_BACKEND_URL;
 
 interface AuthContextType {
   isLoggedIn: boolean;

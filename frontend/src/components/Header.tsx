@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/Header.css';
 import { useAuth } from '../AuthContext';
-const BASE_URL = process.env.REACT_APP_API_BASE;
+const BASE_URL = process.env.REACT_APP_BACKEND_URL;
 
 const Header: React.FC = () => {
   const { isLoggedIn, logout } = useAuth(); 
