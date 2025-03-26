@@ -28,19 +28,6 @@ module.exports = function(client) {
         }
     };
 
-    const validateToken = async (accessToken) => {
-        try {
-            const response = await axios.get('https://api.spotify.com/v1/me', {
-                headers: { 'Authorization': `Bearer ${accessToken}` }
-            });
-            console.log("Token is valid. User data:", response.data);
-            return true; 
-        } catch (error) {
-            console.error("Token validation failed:", error.response ? error.response.data : error.message);
-            return false; 
-        }
-    };
-
     router.get('/top-artists/:userId/:timeRange', async (req, res) => {
         const { userId, timeRange } = req.params;
         const authHeader = req.headers['authorization'];
@@ -51,6 +38,7 @@ module.exports = function(client) {
 
         try {
             const topArtists = await fetchTopArtists(timeRange, accessToken, userId);
+            
             const formattedArtists = topArtists.map(artist => ({
                 artistId: artist.id,
                 name: artist.name,
