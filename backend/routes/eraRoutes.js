@@ -43,11 +43,9 @@ module.exports = function(client) {
         try {
             let cachedAlbumInfo = await client.get(cacheKey);
             if (cachedAlbumInfo) {
-                console.log(`Album info for album ${albumId} fetched from cache`);
                 return JSON.parse(cachedAlbumInfo);
             }
 
-            console.log(`No cached album info for album ${albumId}, fetching from Spotify`);
             const response = await axios.get(`https://api.spotify.com/v1/albums/${albumId}`, {
                 headers: { 'Authorization': `Bearer ${accessToken}` }
             });
