@@ -54,7 +54,7 @@ font-style: italic;
     color: black; 
 }
 
-.fuction-footer {
+.function-footer {
     position: fixed;
     bottom: 3px;
     left: 0;
@@ -67,7 +67,7 @@ font-style: italic;
     margin: 0px 220px;
   }
   
-  .fucntion-footer .content {
+  .function-footer .content {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
