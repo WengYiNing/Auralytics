@@ -3,8 +3,11 @@ const router = express.Router();
 const axios = require('axios');
 
 router.get('/login', (req, res) => {
+    console.log('CLIENT_ID:', process.env.CLIENT_ID);
+    console.log('REDIRECT_URI:', process.env.REDIRECT_URI);
+
     console.log('Login route accessed');
-    const scopes = 'user-read-private user-read-email user-top-read'; 
+    const scopes = 'user-top-read'; 
     const authUrl = 'https://accounts.spotify.com/authorize?' +
     `response_type=code&client_id=${process.env.CLIENT_ID}` +
     `&scope=${encodeURIComponent(scopes)}` +
