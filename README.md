@@ -121,4 +121,11 @@ For full license details, check the [`LICENSE`](./LICENSE) file.
 
 ---
 
+## 📩 Contact Us
+
+If you have any questions or suggestions, feel free to reach out to us:
+
+- **Email:** [support@auralytics.com](mailto:support@auralytics.com)
+- **X (formerly Twitter):** [@Auralytics](https://x.com/Auralytics)
+
 Thank you for your interest in Auralytics! We look forward to your contributions and hope you enjoy using and improving this project. 🎧
