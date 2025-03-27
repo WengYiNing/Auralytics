@@ -94,33 +94,43 @@ const MostListenedDecades: React.FC = () => {
                 </div>
             </div>
 
+            {decades.length > 0 && (
             <ul>
-                {decades.length > 0 ? (
-                    decades.map((decadeData, index) => (
-                        <li key={index} className="decade-item">
-                            <div className="decade-info">
-                                <span className="decade-index">{index + 1}</span> 
-                                <div className="album-container">
-                                    <img src={decadeData.topSong.albumImageUrl} alt={`Album cover for ${decadeData.topSong.name}`} className="album-image" />
-                                </div>
-                                <span className="decade-name">{decadeData.decade}</span>
-                                <div className="decade-progress-bar-container">
-                                    <div className="decade-progress-bar" style={{ width: `${(decadeData.score / maxScore) * 100}%` }}></div>
-                                </div>
+                {decades.map((decadeData, index) => (
+                    <li key={index} className="decade-item">
+                        <div className="decade-info">
+                            <span className="decade-index">{index + 1}</span> 
+                            <div className="album-container">
+                                <img
+                                    src={decadeData.topSong.albumImageUrl}
+                                    alt={`Album cover for ${decadeData.topSong.name}`}
+                                    className="album-image"
+                                />
                             </div>
-                            <a href={decadeData.topSong.logoUrl} target="_blank" rel="noopener noreferrer" className="spotify-logo-container">
-                            <img 
-                                src={spotifyLogo} 
-                                alt="Spotify Logo" 
-                                className="spotify-logo" 
+                            <span className="decade-name">{decadeData.decade}</span>
+                            <div className="decade-progress-bar-container">
+                                <div
+                                    className="decade-progress-bar"
+                                    style={{ width: `${(decadeData.score / maxScore) * 100}%` }}
+                                ></div>
+                            </div>
+                        </div>
+                        <a
+                            href={decadeData.topSong.logoUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="spotify-logo-container"
+                        >
+                            <img
+                                src={spotifyLogo}
+                                alt="Spotify Logo"
+                                className="spotify-logo"
                             />
                         </a>
-                        </li>
-                    ))
-                ) : (
-                    <div>Loading...</div>
-                )}
+                    </li>
+                ))}
             </ul>
+             )}
             <Footer/>
         </div>
     );
