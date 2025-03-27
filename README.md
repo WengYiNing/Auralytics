@@ -41,7 +41,7 @@ Auralytics is built using the following technologies:
 ### **Frontend:**
 - **React** (UI framework)
 - **TypeScript** (strongly-typed JavaScript)
-- **CSS Modules / Global CSS** (styling)
+- **CSS** (custom styling)
 - **Create React App (CRA)** (build tool)
 
 ### **Backend:**
