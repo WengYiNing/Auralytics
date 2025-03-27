@@ -12,7 +12,7 @@ router.get('/login', (req, res) => {
     `response_type=code&client_id=${process.env.CLIENT_ID}` +
     `&scope=${encodeURIComponent(scopes)}` +
     `&redirect_uri=${encodeURIComponent(process.env.REDIRECT_URI)}` +
-    `&prompt=login`;
+    `&show_dialog=true`;
 
     console.log('Generated Spotify authorization URL:', authUrl);
 
