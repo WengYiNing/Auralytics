@@ -1,7 +1,7 @@
 # Auralytics
 
 <p align="center">
-  <img src="frontend/public/logo.jpg" alt="Auralytics Logo" width="500">
+  <img src="frontend/public/logo.jpg" alt="Auralytics Logo" width="250">
 </p>
 
 Auralytics is an open-source project designed to provide in-depth insights into users' Spotify listening habits. By leveraging Spotify's API, Auralytics visualizes users' most frequently played tracks, albums, and genres over different time periods.
