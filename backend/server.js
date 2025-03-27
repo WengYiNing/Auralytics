@@ -1,6 +1,9 @@
 const express = require('express');
 const cors = require('cors');
 const redis = require('redis');
+const redisHost = process.env.REDIS_HOST || 'localhost';
+const redisPort = process.env.REDIS_PORT || 6379;
+const redisUrl = `redis://${redisHost}:${redisPort}`;
 require('dotenv').config();
 const userRoutes = require('./routes/userRoutes');
 const trackRoutes = require('./routes/trackRoutes');
@@ -14,7 +17,7 @@ const PORT = process.env.PORT || 8888;
 
 const initializeRedis = () => {
   const client = redis.createClient({
-    url: process.env.REDIS_URL
+    url: redisUrl
   });
 
   client.on('error', (err) => {
