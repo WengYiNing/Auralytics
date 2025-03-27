@@ -1,7 +1,7 @@
 # Auralytics
 
 <p align="center">
-  <img src="frontend/public/logo.jpg" alt="Auralytics Logo" width="250">
+  <img src="assets/logo.png" alt="Auralytics Logo" width="250">
 </p>
 
 Auralytics is an open-source project designed to provide in-depth insights into users' Spotify listening habits. By leveraging Spotify's API, Auralytics visualizes users' most frequently played tracks, albums, and genres over different time periods.
@@ -30,7 +30,7 @@ Auralytics relies on Spotify's API to fetch user data, so you will need a **Spot
   <img src="assets/Spotify API Example.png" alt="Spotify API Example" width="800">
 </p>
 
-For a more detailed guide, visit the [Spotify API Documentation](https://developer.spotify.com/documentation/web-api/).
+For a more detailed guide, please visit the [Spotify API Documentation](https://developer.spotify.com/documentation/web-api/).
 
 ---
 
@@ -41,13 +41,12 @@ Auralytics is built using the following technologies:
 ### **Frontend:**
 - **React** (UI framework)
 - **TypeScript** (strongly-typed JavaScript)
-- **Tailwind CSS** (styling)
-- **Vite** (build tool)
+- **CSS Modules / Global CSS** (styling)
+- **Create React App (CRA)** (build tool)
 
 ### **Backend:**
 - **Node.js** (runtime environment)
 - **Express.js** (server framework)
-- **MongoDB** (database for storing user listening history)
 - **Redis** (caching layer to reduce API calls)
 - **Spotify OAuth 2.0** (authentication)
 
@@ -57,7 +56,7 @@ For more details on setup and development, please check the individual README fi
 
 ## 🚀 Running the Project
 
-Auralytics can be started using **two different methods**:
+Auralytics can be started using two different methods:
 
 ### **Option 1: Using Docker (Recommended)**
 1. Clone the repository:
@@ -71,7 +70,7 @@ Auralytics can be started using **two different methods**:
    ```
 3. Access the application:
    - Frontend: `http://localhost:3000`
-   - Backend API: `http://localhost:5000`
+   - Backend API: `http://localhost:8888`
 
 To stop the service, use:
 ```sh
@@ -85,7 +84,7 @@ docker-compose down
    npm install
    node server.js
    ```
-   - Backend will run at `http://localhost:5000`
+   - Backend will run at `http://localhost:8888`
 
 2. **Start the frontend:**
    ```sh
@@ -95,7 +94,7 @@ docker-compose down
    ```
    - Frontend will run at `http://localhost:3000`
 
-> **Note:** Make sure MongoDB and Redis are running locally if not using Docker.
+> **Note:** Make sure Redis are running locally if not using Docker.
 
 ---
 
