@@ -6,24 +6,29 @@
 
 Auralytics is an open-source project designed to provide in-depth insights into users' Spotify listening habits. By leveraging Spotify's API, Auralytics visualizes users' most frequently played tracks, albums, and genres over different time periods.
 
-The production version of Auralytics is available at:  
-[**Auralytics Production**](https://auralytics.com)
+The production version of Auralytics is available at:  [**https://auralyticsmusic.com/**](https://auralyticsmusic.com/)
 
 This repository contains the **open-source local version**, which allows developers to run Auralytics locally and contribute improvements. We actively review and merge valuable contributions into the production environment. Your contributions help enhance Auralytics for the entire community.
 
 ---
 
-## 🎵 Prerequisites: Obtaining Spotify Client ID & Client Secret
+## 🗝️ Prerequisites: Obtaining Spotify Client ID & Client Secret
 
 Auralytics relies on Spotify's API to fetch user data, so you will need a **Spotify Client ID** and **Client Secret** before running the project. Follow these steps to obtain them:
 
-1. Go to [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/).
+1. Go to [**Spotify for Developers**](https://developer.spotify.com/).
 2. Log in with your Spotify account.
-3. Click **Create an App**.
-4. Fill in the required details and agree to Spotify’s terms.
-5. Once created, go to **Dashboard** and click on your app.
-6. Copy the **Client ID** and **Client Secret**.
-7. Add these credentials to the project's `.env` files (see below).
+3. Go to [**Dashboard**](https://developer.spotify.com/dashboard).
+4. Click **Create app**.
+5. Fill in the required details and agree to Spotify’s terms (Redirect URIs needs to be align with the REDIRECT_URI in .env for Backend).
+6. Once created, go to **Dashboard** and click on your app.
+7. Click "Settings".
+8. Copy the **Client ID** and **Client Secret**.
+9. Add these credentials to the project's `.env` files (see below).
+
+<p align="center">
+  <img src="assets/Spotify API Example.png" alt="Spotify API Example" width="800">
+</p>
 
 For a more detailed guide, visit the [Spotify API Documentation](https://developer.spotify.com/documentation/web-api/).
 
