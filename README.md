@@ -47,7 +47,7 @@ For a more detailed guide, please visit the [Spotify API Documentation](https://
 
 ---
 
-## 💻 Technologies Used
+## 💻 Tech Stack
 
 Auralytics is built using the following technologies:
 
