@@ -67,47 +67,95 @@ Auralytics is built using the following technologies:
 
 ## 🚀 Running the Project
 
+### Clone the repository
 
-### **Clone the repository**
+```sh
+git clone https://github.com/WengYiNing/Auralytics
+cd Auralytics
+```
 
-   ```sh
-   git clone https://github.com/WengYiNing/Auralytics
-   cd Auralytics
-   ```
-
-### **Create the `.env` files**
+### Create the `.env` files
 
 This project requires an `.env` file to run. Before starting the application, please make sure to create the `.env` files and add .env to .gitignore to avoid committing sensitive information.
 
+#### For macOS/Linux Developers
+
 **Backend Steps**
+
 1. Navigate to the `backend/` directory:
    ```sh
    cd backend
+   ```
 2. Copy the .env.example file to create a new one:
    ```sh
    cp .env.example .env
+   ```
 3. Open the .env file and configure the necessary values:
    ```sh
    nano .env
+   ```
 4. Save and exit (Ctrl + X, then Y, then Enter).
 
 **Frontend Steps**
+
 1. Navigate to the `frontend/` directory:
    ```sh
    cd ../frontend
+   ```
 2. Copy the .env.example file to create a new one:
    ```sh
    cp .env.example .env
+   ```
 3. Open the .env file and configure the necessary values:
    ```sh
    nano .env
+   ```
 4. Save and exit (Ctrl + X, then Y, then Enter).
 
-### **Start the project**
+#### For Windows Developers
+
+**Backend Steps**
+
+1. Navigate to the `backend/` directory:
+   ```powershell
+   cd backend
+   ```
+2. Copy the .env.example file to create a new one:
+   ```powershell
+   copy .env.example .env
+   ```
+3. Open the .env file and configure the necessary values using Notepad or another text editor:
+   ```powershell
+   notepad .env
+   ```
+4. Save and close the file.
+
+**Frontend Steps**
+
+1. Navigate to the `frontend/` directory:
+   ```powershell
+   cd ../frontend
+   ```
+2. Copy the .env.example file to create a new one:
+   ```powershell
+   copy .env.example .env
+   ```
+3. Open the .env file and configure the necessary values:
+   ```powershell
+   notepad .env
+   ```
+4. Save and close the file.
+
+---
+
+### Start the project
 
 Auralytics can be started using two different methods:
 
-**Option 1: Using Docker**
+#### Option 1: Using Docker
+
+**For macOS/Linux/Windows**
+
 1. Clone the repository:
    ```sh
    git clone https://github.com/WengYiNing/Auralytics
@@ -121,29 +169,61 @@ Auralytics can be started using two different methods:
    - Frontend: `http://localhost:3000`
    - Backend API: `http://localhost:8888`
 
-To stop the service, use "Ctrl + C". And input :
+To stop the service, use "Ctrl + C". Then input:
+
 ```sh
 docker compose down
 ```
 
-**Option 2: Running Manually Without Docker**
-1. **Start the backend:**
+---
+
+#### Option 2: Running Manually Without Docker
+
+##### For macOS/Linux Developers
+
+1. Start the backend:
+
    ```sh
    cd backend
    npm install
    node server.js
    ```
+
    - Backend will run at `http://localhost:8888`
 
-2. **Start the frontend:**
+2. Start the frontend:
+
    ```sh
    cd frontend
    npm install
    npm start
    ```
+
    - Frontend will run at `http://localhost:3000`
 
-> **Note:** Make sure Redis are running locally if not using Docker.
+##### For Windows Developers
+
+1. Start the backend:
+
+   ```powershell
+   cd backend
+   npm install
+   node server.js
+   ```
+
+   - Backend will run at `http://localhost:8888`
+
+2. Start the frontend:
+
+   ```powershell
+   cd frontend
+   npm install
+   npm start
+   ```
+
+   - Frontend will run at `http://localhost:3000`
+
+> Note: Make sure Redis is running locally if not using Docker.
 
 ---
 
