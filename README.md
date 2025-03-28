@@ -14,13 +14,13 @@ This repository contains the **open-source local version**, allowing developers 
 
 ## 📑 Table of Contents
 
-- [📜 License](#-license)
 - [🗝️ Prerequisites: Obtaining Spotify Client ID & Client Secret](#️-prerequisites-obtaining-spotify-client-id--client-secret)
 - [💻 Technologies Used](#-technologies-used)
 - [🚀 Running the Project](#-running-the-project)
   - [Option 1: Using Docker](#option-1-using-docker)
   - [Option 2: Running Manually Without Docker](#option-2-running-manually-without-docker)
 - [🤝 Contributing](#-contributing)
+- [📜 License](#-license)
 - [📩 Contact Us](#-contact-us)
 
 ---
