@@ -1,26 +1,39 @@
 # Auralytics
 
 <p align="center">
-  <img src="assets/logo.png" alt="Auralytics Logo" width="250">
+  <img src="assets/logo.png" alt="Auralytics Logo" width="150">
 </p>
 
-Auralytics is an open-source project designed to provide in-depth insights into users' Spotify listening habits. By leveraging Spotify's API, Auralytics visualizes users' most frequently played tracks, albums, and genres over different time periods.
+Auralytics is an open-source project designed to provide in-depth insights into users' Spotify listening habits. By leveraging Spotify's API, Auralytics provides users with their  top tracks, artists, albums, genres, and musical eras.
 
-The production version of Auralytics is available at:  [**https://auralyticsmusic.com/**](https://auralyticsmusic.com/)
+You are very welcome to try our official service—the production version of Auralytics is available at:  [**https://auralyticsmusic.com**](https://auralyticsmusic.com)
 
-This repository contains the **open-source local version**, which allows developers to run Auralytics locally and contribute improvements. We actively review and merge valuable contributions into the production environment. Your contributions help enhance Auralytics for the entire community.
+This repository contains the **open-source local version**, allowing developers to run Auralytics locally and contribute improvements. We actively review and merge valuable contributions into the production environment. Your contributions help enhance Auralytics for the entire community.
+
+---
+
+## 📑 Table of Contents
+
+- [📜 License](#-license)
+- [🗝️ Prerequisites: Obtaining Spotify Client ID & Client Secret](#️-prerequisites-obtaining-spotify-client-id--client-secret)
+- [💻 Technologies Used](#-technologies-used)
+- [🚀 Running the Project](#-running-the-project)
+  - [Option 1: Using Docker](#option-1-using-docker)
+  - [Option 2: Running Manually Without Docker](#option-2-running-manually-without-docker)
+- [🤝 Contributing](#-contributing)
+- [📩 Contact Us](#-contact-us)
 
 ---
 
 ## 🗝️ Prerequisites: Obtaining Spotify Client ID & Client Secret
 
-Auralytics relies on Spotify's API to fetch user data, so you will need a **Spotify Client ID** and **Client Secret** before running the project. Follow these steps to obtain them:
+Auralytics relies on Spotify's API to fetch user data, so you will need a **Spotify Client ID** and **Client Secret** before running the project. Please follow the steps we carefully organized to obtain them:
 
 1. Go to [**Spotify for Developers**](https://developer.spotify.com/).
-2. Log in with your Spotify account.
+2. Log in with your Spotify account (no need to be Premium).
 3. Go to [**Dashboard**](https://developer.spotify.com/dashboard).
 4. Click **Create app**.
-5. Fill in the required details and agree to Spotify’s terms (Redirect URIs needs to be align with the REDIRECT_URI in .env for Backend).
+5. Fill in the required details and agree to Spotify’s terms (Redirect URIs must be align with the REDIRECT_URI in .env for Backend).
 6. Once created, go to **Dashboard** and click on your app.
 7. Click "Settings".
 8. Copy the **Client ID** and **Client Secret**.
@@ -34,7 +47,7 @@ For a more detailed guide, please visit the [Spotify API Documentation](https://
 
 ---
 
-## 🏗️ Technologies Used
+## 💻 Technologies Used
 
 Auralytics is built using the following technologies:
 
@@ -58,10 +71,10 @@ For more details on setup and development, please check the individual README fi
 
 Auralytics can be started using two different methods:
 
-### **Option 1: Using Docker (Recommended)**
+### **Option 1: Using Docker**
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourrepo/Auralytics.git
+   git clone https://github.com/WengYiNing/Auralytics
    cd Auralytics
    ```
 2. Build and run containers:
@@ -103,23 +116,17 @@ docker-compose down
 We **enthusiastically welcome contributions** from the community! Every pull request (PR) is carefully reviewed, and we strive to incorporate meaningful improvements into the production environment.
 
 ### **How to Contribute:**
-1. **Fork the repository**.
-2. **Create a new branch** for your feature/fix.
-3. **Make your changes** and test them locally.
-4. **Submit a pull request** with a clear description.
-
-Before submitting a PR, please ensure:
-- Your code follows our **coding standards**.
-- You have tested your changes thoroughly.
-- You have updated any relevant documentation.
-
-For more details, see our [Contribution Guidelines](./CONTRIBUTING.md).
+1. Fork the repository.
+2. Create a new branch for your feature/fix.
+3. Make sure to follow the existing project structure to make you change and test them locally.
+4. Update the relevant documentations.
+5. Submit a pull request with a clear description.
 
 ---
 
 ## 📜 License
 
-Auralytics is licensed under the **MIT License**. This means you are free to use, modify, and distribute the project, as long as you include the original license and copyright notice.
+Auralytics is licensed under the **Apache License 2.0**. You are free to use, modify, and distribute the project, as long as you comply with the terms of the license, including proper attribution and inclusion of the license notice.
 
 For full license details, check the [`LICENSE`](./LICENSE) file.
 
@@ -129,7 +136,7 @@ For full license details, check the [`LICENSE`](./LICENSE) file.
 
 If you have any questions or suggestions, feel free to reach out to us:
 
-- **Email:** [support@auralytics.com](mailto:support@auralytics.com)
-- **X (formerly Twitter):** [@Auralytics](https://x.com/Auralytics)
+- **Email:** [musicinsightsforspotify@gmail.com](musicinsightsforspotify@gmail.com)
+- **X:** [@AuralyticsMusic](https://x.com/AuralyticsMusic)
 
 Thank you for your interest in Auralytics! We look forward to your contributions and hope you enjoy using and improving this project. 🎧
