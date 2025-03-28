@@ -1,3 +1,34 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# dotenv files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# build output
+/build
+/dist
+
+# TypeScript
+*.tsbuildinfo
+
+# testing
+/coverage
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS / IDE
+.DS_Store
+.vscode/
+
 # Logs
 logs
 *.log
@@ -21,13 +52,6 @@ coverage
 # Dependency directories
 node_modules/
 jspm_packages/
-
-# dotenv
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
 
 # Cache
 .cache
