@@ -67,17 +67,47 @@ Auralytics is built using the following technologies:
 
 ## 🚀 Running the Project
 
-This project requires an `.env` file to run. Before starting the application, please make sure to create the `.env` file.
 
-(Make sure to add .env to .gitignore to avoid committing sensitive information)
+### **Clone the repository**
 
-**Steps**
-1. Copy `.env.example` to create a new `.env` file in both frontend and backend folders.
-2. Edit the .env file and configure the necessary values.
+   ```sh
+   git clone https://github.com/WengYiNing/Auralytics
+   cd Auralytics
+   ```
 
-After creating .env, Auralytics can be started using two different methods:
+### **Create the `.env` files**
 
-### **Option 1: Using Docker**
+This project requires an `.env` file to run. Before starting the application, please make sure to create the `.env` files and add .env to .gitignore to avoid committing sensitive information.
+
+**Backend Steps**
+1. Navigate to the `backend/` directory:
+   ```sh
+   cd backend
+2. Copy the .env.example file to create a new one:
+   ```sh
+   cp .env.example .env
+3. Open the .env file and configure the necessary values:
+   ```sh
+   nano .env
+4. Save and exit (Ctrl + X, then Y, then Enter).
+
+**Frontend Steps**
+1. Navigate to the `frontend/` directory:
+   ```sh
+   cd ../frontend
+2. Copy the .env.example file to create a new one:
+   ```sh
+   cp .env.example .env
+3. Open the .env file and configure the necessary values:
+   ```sh
+   nano .env
+4. Save and exit (Ctrl + X, then Y, then Enter).
+
+### **Start the project**
+
+Auralytics can be started using two different methods:
+
+**Option 1: Using Docker**
 1. Clone the repository:
    ```sh
    git clone https://github.com/WengYiNing/Auralytics
@@ -91,12 +121,12 @@ After creating .env, Auralytics can be started using two different methods:
    - Frontend: `http://localhost:3000`
    - Backend API: `http://localhost:8888`
 
-To stop the service, use:
+To stop the service, use "Ctrl + C". And input :
 ```sh
-docker-compose down
+docker compose down
 ```
 
-### **Option 2: Running Manually Without Docker**
+**Option 2: Running Manually Without Docker**
 1. **Start the backend:**
    ```sh
    cd backend
