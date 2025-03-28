@@ -63,8 +63,6 @@ Auralytics is built using the following technologies:
 - **Redis** (caching layer to reduce API calls)
 - **Spotify OAuth 2.0** (authentication)
 
-For more details on setup and development, please check the individual README files in the [`frontend`](./frontend/README.md) and [`backend`](./backend/README.md) directories.
-
 ---
 
 ## 🚀 Running the Project
