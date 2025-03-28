@@ -31,7 +31,7 @@ const App: React.FC = () => {
         <p >
           Discover your unique music story.
           <br /><br />
-          Explore your top tracks, artists, genres, and musical eras. Dive into your personalized Spotify insights!
+          Explore your top tracks, artists, albums, genres, and musical eras. Dive into your personalized Spotify insights!
         </p>
 
         <a href= {`${BASE_URL}/login`} className="please-login">
