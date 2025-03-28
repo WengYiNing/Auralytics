@@ -67,7 +67,15 @@ Auralytics is built using the following technologies:
 
 ## 🚀 Running the Project
 
-Auralytics can be started using two different methods:
+This project requires an `.env` file to run. Before starting the application, please make sure to create the `.env` file.
+
+(Make sure to add .env to .gitignore to avoid committing sensitive information)
+
+**Steps**
+1. Copy `.env.example` to create a new `.env` file in both frontend and backend folders.
+2. Edit the .env file and configure the necessary values.
+
+After creating .env, Auralytics can be started using two different methods:
 
 ### **Option 1: Using Docker**
 1. Clone the repository:
@@ -77,7 +85,7 @@ Auralytics can be started using two different methods:
    ```
 2. Build and run containers:
    ```sh
-   docker-compose up --build
+   docker compose up --build
    ```
 3. Access the application:
    - Frontend: `http://localhost:3000`
