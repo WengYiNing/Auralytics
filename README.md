@@ -68,6 +68,14 @@ Auralytics is built using the following technologies:
 
 ## 🚀 Running the Project
 
+### Prerequisites
+
+Before starting, make sure you have the following installed on your system:
+
+- **Git**: [Download and install Git](https://git-scm.com/downloads)
+- **Node.js** and **npm**: [Download and install Node.js](https://nodejs.org/en) (npm comes with Node.js)
+- **Docker** (optional, if you prefer using Docker): [Download and install Docker](https://www.docker.com/get-started)
+
 ### Clone the repository
 
 ```sh
@@ -155,11 +163,8 @@ Auralytics can be started using two different methods:
 
 #### Option 1: Using Docker
 
-**For macOS/Linux/Windows**
-
-1. Clone the repository:
+1. Back to root path:
    ```sh
-   git clone https://github.com/WengYiNing/Auralytics
    cd Auralytics
    ```
 2. Build and run containers:
@@ -180,9 +185,14 @@ docker compose down
 
 #### Option 2: Running Manually Without Docker
 
-##### For macOS/Linux Developers
+##### For macOS/Linux Developers (using terminal)
 
-1. Start the backend:
+1. Back to root path:
+   ```sh
+   cd Auralytics
+   ```
+
+2. Start the backend:
 
    ```sh
    cd backend
@@ -192,7 +202,7 @@ docker compose down
 
    - Backend will run at `http://localhost:8888`
 
-2. Start the frontend:
+3. Start the frontend:
 
    ```sh
    cd frontend
@@ -202,9 +212,14 @@ docker compose down
 
    - Frontend will run at `http://localhost:3000`
 
-##### For Windows Developers
+##### For Windows Developers (using PowerShell)
 
-1. Start the backend:
+1. Back to root path:
+   ```powershell
+   cd Auralytics
+   ```
+
+2. Start the backend:
 
    ```powershell
    cd backend
@@ -214,7 +229,7 @@ docker compose down
 
    - Backend will run at `http://localhost:8888`
 
-2. Start the frontend:
+3. Start the frontend:
 
    ```powershell
    cd frontend
