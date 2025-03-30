@@ -12,6 +12,26 @@
       "top_genres_desc": "Discover your top 10 most-listened music genres and see which styles define your unique taste.",
       "top_eras_title": "Top eras",
       "top_eras_desc": "Discover your top 5 most-listened eras and reveal your music history."
+    },
+    "header": {
+       "account": "account",
+       "login": "Log In",
+       "logout": "Log Out"
+    },
+    "scroll_hint": {
+        "hint": "Scroll to explore"
+    },
+    "function": {
+        "top_tracks": "Top tracks",
+        "top_artists": "Top artists",
+        "top_albums": "Top albums",
+        "top_genres": "Top genres",
+        "top_eras": "Top eras"
     }
+
+
+
+
   }
+  
   
