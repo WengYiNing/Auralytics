@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/Header.css';
 import { useAuth } from '../AuthContext';
+import { useTranslation } from 'react-i18next';
 const BASE_URL = process.env.REACT_APP_BACKEND_URL;
 
 const Header: React.FC = () => {
@@ -19,19 +20,21 @@ const Header: React.FC = () => {
     setDropdownOpen(!dropdownOpen);
   };
 
+  const { t } = useTranslation();
+
   return (
     <div className="header">
       <h2><a className="Website-name" href="/function">Auralytics</a></h2>
       <div className="account">
         <button className="dropdown-bottom" onClick={toggleDropdown}>
-          account <span>▾</span>
+         {t('header.account')} <span>▾</span>
         </button>
         {dropdownOpen && (
           <div className="dropdown-content">
             {isLoggedIn ? (
-              <button onClick={handleLogout}>Log Out</button>
+              <button onClick={handleLogout}>{t('header.logout')}</button>
             ) : (
-              <button onClick={handleLogin}>Log In</button>
+              <button onClick={handleLogin}>{t('header.login')}</button>
             )}
           </div>
         )}
