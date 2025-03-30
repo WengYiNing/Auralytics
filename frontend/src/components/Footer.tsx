@@ -12,6 +12,10 @@ const Footer: React.FC = () => {
               Music data, artist images, and album covers are provided by Spotify. Spotify is a trademark of Spotify AB.<br />
               We are not affiliated with Spotify AB or its partners, and our service is only intended for personal use of music data.
             </p>
+            <div className= 'social-link'>
+            <Link to="https://x.com/AuralyticsMusic">X</Link>
+            <Link to="https://github.com/WengYiNing/Auralytics">Github</Link>
+            </div>
           </div>
           <div className='policy-and-trademark'>
             <p className='trademark'>© 2025 Auralytics</p>

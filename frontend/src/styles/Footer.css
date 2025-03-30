@@ -50,6 +50,14 @@ p{
   width: 160px;
 }
 
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff; 
+  width: 160px;
+}
+
 .trademark {
   font-size: 12px;
   margin: 0;
