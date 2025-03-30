@@ -1,8 +1,10 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import '../styles/App.css';
 import ScrollHint from '../components/ScrollHint'; 
+import { useTranslation } from 'react-i18next';
 const BASE_URL = process.env.REACT_APP_BACKEND_URL;
 
 const App: React.FC = () => {
@@ -23,19 +25,18 @@ const App: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const { t } = useTranslation();
 
   return (
     <div>
       <Header />
       <div className="start-content">
         <p >
-          Discover your unique music story.
-          <br /><br />
-          Explore your top tracks, artists, albums, genres, and musical eras. Dive into your personalized Spotify insights!
+          {t('home.intro')}
         </p>
 
         <a href= {`${BASE_URL}/login`} className="please-login">
-          Login with your Spotify account to start...
+          {t('home.login_prompt')}
         </a>
       </div>
       <ScrollHint />
@@ -45,8 +46,8 @@ const App: React.FC = () => {
                     <img className="intro-image" src="https://imgur.com/5yoH2bf.jpeg" alt="Top Tracks"/>
                   </div>  
                   <div className='intro-words'>
-                    <p className='function-title'>Top tracks</p>
-                    <p>Instantly see your top 50 most-played tracks and relive the songs that build your vibe.</p>
+                    <p className='function-title'>{t('home.top_tracks_title')}</p>
+                    <p>{t('home.top_tracks_desc')}</p>
                   </div>
                 </div>
                 <div className="intro-item">
@@ -54,8 +55,8 @@ const App: React.FC = () => {
                  <img className="intro-image" src="https://imgur.com/IQAajbk.jpeg" alt="Top Artists"/>
                 </div>
                   <div className='intro-words'>
-                    <p className='function-title'>Top artists</p>
-                    <p>Explore your top 20 most-listened artists and see who’s been dominating your playlists.</p>
+                    <p className='function-title'>{t('home.top_artists_title')}</p>
+                    <p>{t('home.artists_desc')}</p>
                   </div>
                 </div>
                 <div className="intro-item">
@@ -63,8 +64,8 @@ const App: React.FC = () => {
                   <img className="intro-image" src="https://imgur.com/ltQJcVc.jpeg" alt="Top Albums"/>
                 </div>
                   <div className='intro-words'>
-                    <p className='function-title'>Top albums</p>
-                    <p>Dive into your top 10 most-listened albums and see what’s been on repeat.</p>
+                    <p className='function-title'>{t('home.top_albums_title')}</p>
+                    <p>{t('home.top_albums_desc')}</p>
                   </div>
                 </div>
                 <div className="intro-item">
@@ -72,8 +73,8 @@ const App: React.FC = () => {
                   <img className="intro-image" src="https://imgur.com/eWtoR5D.jpeg" alt="Top Genres"/>
                 </div>
                   <div className='intro-words'>
-                    <p className='function-title'>Top genres</p>
-                    <p>Discover your top 10 most-listened music genres and see which styles define your unique taste.</p>
+                    <p className='function-title'>{t('home.top_genres_title')}</p>
+                    <p>{t('home.genres_desc')}</p>
                   </div>
                 </div>
                 <div className="intro-item">
@@ -81,28 +82,12 @@ const App: React.FC = () => {
                   <img className="intro-image" src="https://imgur.com/seRyHq6.jpeg" alt="Top Eras"/>
                 </div>
                   <div className='intro-words'>
-                    <p className='function-title'>Top eras</p>
-                    <p>Discover your top 5 most-listened eras and reveal your music history.</p>
+                    <p className='function-title'>{t('home.top_eras_title')}</p>
+                    <p>{t('home.top_eras_desc')}</p>
                   </div>
                 </div>
       </div>
-      <div className='index-footer'>
-        <div className="content">
-          <div className='trade-mark-and-disclaimer'>
-            <p>
-            Music data, artist images, and album covers are provided by Spotify. Spotify is a trademark of Spotify AB.<br />
-            We are not affiliated with Spotify AB or its partners, and our service is only intended for personal use of music data.
-            </p>
-          </div>
-          <div className='policy-and-trademark'>
-              <p className='trademark'>© 2025 Auralytics</p>
-              <div className= 'policy'>
-                <Link to="/TermsOfUse">Terms of Use</Link>
-                <Link to="/privacy">Privacy Policy</Link>
-                </div>
-              </div>
-        </div>
-      </div>
+      <Footer />
     </div>
   );
 }
