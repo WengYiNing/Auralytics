@@ -1,12 +1,15 @@
 import React, { useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
+import { useTranslation } from 'react-i18next';
 import '../styles/Function.css';
 import { useAuth } from '../AuthContext'; 
 
 const FunctionPage: React.FC = () => {
   const { isLoggedIn } = useAuth(); 
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (!isLoggedIn) {
@@ -19,30 +22,14 @@ const FunctionPage: React.FC = () => {
       <Header />
       <div className="instant-analysis">
         <div className="boxes-content1">
-          <Link to="/tracks">Top tracks</Link>
-          <Link to="/artists">Top artists</Link>
-          <Link to="/albums">Top albums</Link>
-          <Link to="/genres">Top genres</Link>
-          <Link to="/eras">Top eras</Link>
+          <Link to="/tracks">{t('function.top_tracks')}</Link>
+          <Link to="/artists">{t('function.top_artists')}</Link>
+          <Link to="/albums">{t('function.top_albums')}</Link>
+          <Link to="/genres">{t('function.top_genres')}</Link>
+          <Link to="/eras">{t('function.top_eras')}</Link>
         </div>
       </div>
-      <div className='function-footer'>
-        <div className="content">
-          <div className='trade-mark-and-disclaimer'>
-            <p>
-            Music data, artist images, and album covers are provided by Spotify. Spotify is a trademark of Spotify AB.<br />
-            We are not affiliated with Spotify AB or its partners, and our service is only intended for personal use of music data.
-            </p>
-          </div>
-          <div className='policy-and-trademark'>
-            <p className='trademark'>© 2025 Auralytics</p>
-            <div className= 'policy'>
-              <Link to="/TermsOfUse">Terms of Use</Link>
-              <Link to="/privacy">Privacy Policy</Link>
-              </div>
-            </div>
-        </div>
-      </div>
+      <Footer />
     </div>
   );
 }
