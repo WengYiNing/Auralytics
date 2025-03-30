@@ -1,0 +1,17 @@
+{
+    "home": {
+      "intro": "Discover your unique music story.\n\nExplore your top tracks, artists, albums, genres, and musical eras. Dive into your personalized Spotify insights!",
+      "login_prompt": "Login with your Spotify account to start...",
+      "top_tracks_title": "Top tracks",
+      "top_tracks_desc": "Instantly see your top 50 most-played tracks and relive the songs that build your vibe.",
+      "top_artists_title": "Top artists",
+      "top_artists_desc": "Explore your top 20 most-listened artists and see who's been dominating your playlists.",
+      "top_albums_title": "Top albums",
+      "top_albums_desc": "Dive into your top 10 most-listened albums and see what's been on repeat.",
+      "top_genres_title": "Top genres",
+      "top_genres_desc": "Discover your top 10 most-listened music genres and see which styles define your unique taste.",
+      "top_eras_title": "Top eras",
+      "top_eras_desc": "Discover your top 5 most-listened eras and reveal your music history."
+    }
+  }
+  
