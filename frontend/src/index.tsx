@@ -13,6 +13,7 @@ import TermsOfUse from './pages/TermsOfUse';
 import Callback from './callback'; 
 import { AuthProvider, useAuth } from './AuthContext';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';  
+import './i18n';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
