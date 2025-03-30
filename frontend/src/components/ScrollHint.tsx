@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import '../styles/ScrollHint.css'; 
 
 const ScrollHint: React.FC = () => {
   const [visible, setVisible] = useState(true);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,7 +21,7 @@ const ScrollHint: React.FC = () => {
 
   return (
     <div className={`scroll-hint ${visible ? 'visible' : 'hidden'}`}>
-      <span>↓ Scroll to explore</span>
+      <span>↓ {t('scroll_hint.hint')}</span>
     </div>
   );
 };
