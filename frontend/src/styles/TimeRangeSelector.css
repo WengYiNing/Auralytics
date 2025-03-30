@@ -1,0 +1,32 @@
+.time-range {
+    margin-right: 214px;
+    display: flex;
+    gap: 10px;
+}
+
+.time-range button {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    background: none;
+    border: none;
+    color: #989797;
+}
+
+.time-range button:hover {
+    color: black;
+}
+
+.time-range button:visited {
+    color: black;
+}
+
+.time-range button.active {
+    color: black;
+}
+
+.time-range button.inactive {
+    color: #989797;
+}

@@ -18,6 +18,11 @@
        "login": "Log In",
        "logout": "Log Out"
     },
+    "time_range": {
+      "last_1_month": "Last 1 month",
+      "last_6_months": "Last 6 months",
+      "last_12_months": "Last 12 months"
+    },
     "scroll_hint": {
         "hint": "Scroll to explore"
     },
@@ -27,11 +32,30 @@
         "top_albums": "Top albums",
         "top_genres": "Top genres",
         "top_eras": "Top eras"
+    },
+    "tracks": {
+      "title": "Top tracks",
+      "spotify_logo_alt": "Spotify Logo"
+    },
+    "albums": {
+      "title": "Top albums",
+      "spotify_logo_alt": "Spotify Logo"
+    },
+    "artists": {
+      "title": "Top artists",
+      "popularity": "Popularity",
+      "popularity_description": "The popularity of the artist is between 0 and 100, with 100 being the most popular. It is calculated from the popularity of all the artist's tracks.",
+      "unknown_genre": "Unknown",
+      "spotify_logo_alt": "Spotify Logo"
+    },
+    "genres": {
+      "title": "Top genres",
+      "spotify_logo_alt": "Spotify Logo"
+    },
+    "eras": {
+      "title": "Top eras",
+      "spotify_logo_alt": "Spotify Logo"
     }
-
-
-
-
   }
   
   
