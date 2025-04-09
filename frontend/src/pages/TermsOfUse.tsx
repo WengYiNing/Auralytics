@@ -16,6 +16,8 @@ const TermsOfUse: React.FC = () => {
   const liabilitySubitems = t('terms.liability.subitems', { returnObjects: true }) as string[];
   const terminationItems = t('terms.termination.items', { returnObjects: true }) as string[];
 
+  console.log('responsibilities.items', responsibilitiesItems);
+
   return (
     <div>
       <Header />
@@ -27,7 +29,7 @@ const TermsOfUse: React.FC = () => {
 
         <h4>{t('terms.eligibility.title')}</h4>
         <ul>
-          {eligibilityItems.map((item, idx) => (
+          {Array.isArray(eligibilityItems) && eligibilityItems.map((item, idx) => (
             <li key={idx}>{item}</li>
           ))}
         </ul>
@@ -35,19 +37,19 @@ const TermsOfUse: React.FC = () => {
         <h4>{t('terms.responsibilities.title')}</h4>
         <p>{t('terms.responsibilities.intro')}</p>
         <ul>
-          {responsibilitiesItems.map((item, idx) => (
+          {Array.isArray(responsibilitiesItems) && responsibilitiesItems.map((item, idx) => (
             <li key={idx}>{item}</li>
           ))}
         </ul>
         <ul>
-          {responsibilitiesSubitems.map((item, idx) => (
+          {Array.isArray(responsibilitiesSubitems) && responsibilitiesSubitems.map((item, idx) => (
             <li key={idx}>{item}</li>
           ))}
         </ul>
 
         <h4>{t('terms.prohibited.title')}</h4>
         <ul>
-          {prohibitedItems.map((item, idx) => (
+          {Array.isArray(prohibitedItems) && prohibitedItems.map((item, idx) => (
             <li key={idx}>{item}</li>
           ))}
         </ul>
@@ -55,7 +57,7 @@ const TermsOfUse: React.FC = () => {
         <h4>{t('terms.ip.title')}</h4>
         <p>{t('terms.ip.content')}</p>
         <ul>
-          {ipItems.map((item, idx) => (
+          {Array.isArray(ipItems) && ipItems.map((item, idx) => (
             <li key={idx}>{item}</li>
           ))}
         </ul>
@@ -63,19 +65,19 @@ const TermsOfUse: React.FC = () => {
         <h4>{t('terms.liability.title')}</h4>
         <p>{t('terms.liability.intro')}</p>
         <ul>
-          {liabilityItems.map((item, idx) => (
+          {Array.isArray(liabilityItems) && liabilityItems.map((item, idx) => (
             <li key={idx}>{item}</li>
           ))}
         </ul>
         <ul>
-          {liabilitySubitems.map((item, idx) => (
+          {Array.isArray(liabilitySubitems) && liabilitySubitems.map((item, idx) => (
             <li key={idx}>{item}</li>
           ))}
         </ul>
 
         <h4>{t('terms.termination.title')}</h4>
         <ul>
-          {terminationItems.map((item, idx) => (
+          {Array.isArray(terminationItems) && terminationItems.map((item, idx) => (
             <li key={idx}>{item}</li>
           ))}
         </ul>

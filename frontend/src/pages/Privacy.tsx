@@ -24,7 +24,7 @@ const PrivacyPolicy: React.FC = () => {
         <h4>{t('privacy.collect.title')}</h4>
         <p><strong>{t('privacy.collect.personal_data')}</strong></p>
         <ul>
-          {personalDataItems.map((item, idx) => (
+          {Array.isArray(personalDataItems) && personalDataItems.map((item, idx) => (
             <li key={idx}>{item}</li>
           ))}
         </ul>
@@ -32,7 +32,7 @@ const PrivacyPolicy: React.FC = () => {
 
         <p><strong>{t('privacy.collect.cookies')}</strong></p>
         <ul>
-          {cookiesItems.map((item, idx) => (
+          {Array.isArray(cookiesItems) && cookiesItems.map((item, idx) => (
             <li key={idx}>{item}</li>
           ))}
         </ul>
@@ -40,14 +40,14 @@ const PrivacyPolicy: React.FC = () => {
 
         <h4>{t('privacy.usage.title')}</h4>
         <ul>
-          {usageItems.map((item, idx) => (
+          {Array.isArray(usageItems) && usageItems.map((item, idx) => (
             <li key={idx}>{item}</li>
           ))}
         </ul>
 
         <h4>{t('privacy.thirdparty.title')}</h4>
         <ul>
-          {thirdPartyItems.map((item, idx) => (
+          {Array.isArray(thirdPartyItems) && thirdPartyItems.map((item, idx) => (
             <li key={idx}>{item}</li>
           ))}
         </ul>

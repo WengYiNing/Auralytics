@@ -65,98 +65,132 @@
     "privacy": {
         "title": "隱私政策",
         "last_updated": "最後更新日期：2024 年 12 月 24 日",
-        "introduction.title": "導言",
-        "introduction.content": "歡迎使用 Auralytics。我們非常重視您的隱私。本隱私政策說明我們在您使用本服務時如何收集、使用及保護您的個人資訊。本服務為獨立應用程式，透過 Spotify API 提供洞察功能，並非 Spotify AB 或其合作夥伴之官方產品。\n\n使用本服務即表示您同意依據本政策收集並使用您的資訊。",
-        "collect.title": "我們收集的資訊",
-        "collect.personal_data": "1. 個人資料",
-        "collect.personal_data_items": [
+        "introduction": {
+            "title": "導言",
+            "content": "歡迎使用 Auralytics。我們非常重視您的隱私。本隱私政策說明我們在您使用本服務時如何收集、使用及保護您的個人資訊。本服務為獨立應用程式，透過 Spotify API 提供洞察功能，並非 Spotify AB 或其合作夥伴之官方產品。\n\n使用本服務即表示您同意依據本政策收集並使用您的資訊。"
+        },
+        "collect": {
+            "title": "我們收集的資訊",
+            "personal_data": "1. 個人資料",
+            "personal_data_items": [
             "電子郵件地址",
             "Spotify 使用者 ID",
             "API 存取權杖"
-        ],
-        "collect.personal_data_footer": "我們蒐集這些資訊是為了實現服務核心功能並提升您的使用體驗。我們不會將您的個人資料出售、交易或分享給第三方。",
-        "collect.cookies": "2. Cookie",
-        "collect.cookies_items": [
+            ],
+            "personal_data_footer": "我們蒐集這些資訊是為了實現服務核心功能並提升您的使用體驗。我們不會將您的個人資料出售、交易或分享給第三方。",
+            "cookies": "2. Cookie",
+            "cookies_items": [
             "必要 Cookie：網站正常運作所必需。",
             "分析 Cookie：由第三方服務（如 Google Analytics）提供，用於追蹤使用行為並改善服務。",
             "廣告 Cookie：用於透過 Google Ads 等服務投放個人化廣告。"
-        ],
-        "collect.cookies_footer": "您可在瀏覽器設定中管理或停用 Cookie，但這可能影響本服務的部分功能。",
-        "usage.title": "我們如何使用您的資料",
-        "usage.items": [
+            ],
+            "cookies_footer": "您可在瀏覽器設定中管理或停用 Cookie，但這可能影響本服務的部分功能。"
+        },
+        "usage": {
+            "title": "我們如何使用您的資料",
+            "items": [
             "啟用與維護本服務。",
             "個人化您的使用體驗。",
             "偵測、防止並解決安全或技術問題。",
             "其他在蒐集時說明或經您同意的用途。"
-        ],
-        "thirdparty.title": "第三方服務",
-        "thirdparty.items": [
+            ]
+        },
+        "thirdparty": {
+            "title": "第三方服務",
+            "items": [
             "Spotify API：用於擷取並顯示與您相關的 Spotify 資料。",
             "Google Analytics：用於網站流量分析。",
             "Google Ads：用於投放個人化廣告。"
-        ],
-        "thirdparty.footer": "請參考各第三方服務的隱私政策以獲得更多資訊。",
-        "retention.title": "資料保存",
-        "retention.content": "您的資料僅會在我們的資料庫中保留 1 小時，屆時將自動過期並刪除。",
-        "children.title": "兒童隱私",
-        "children.content": "本服務不面向 18 歲以下之使用者。我們不會刻意蒐集兒童個人資料。若您認為您的孩子提供了個資，請立即聯繫我們，我們將儘速刪除相關資料。",
-        "accuracy.title": "資料準確性聲明",
-        "accuracy.content": "儘管我們力求準確，這些洞察結果可能無法完美反映您的實際收聽習慣，僅供參考使用。",
-        "changes.title": "隱私政策變更",
-        "changes.content": "我們可能不定期更新本隱私政策。所有變更將張貼於本頁面並更新「最後更新日期」。若您持續使用本服務，即表示您同意最新的政策內容。",
-        "contact.title": "聯絡我們",
-        "contact.content": "若需更多資訊，請透過 musicinsightsforspotify@gmail.com 聯繫我們。"
+            ],
+            "footer": "請參考各第三方服務的隱私政策以獲得更多資訊。"
+        },
+        "retention": {
+            "title": "資料保存",
+            "content": "您的資料僅會在我們的資料庫中保留 1 小時，屆時將自動過期並刪除。"
+        },
+        "children": {
+            "title": "兒童隱私",
+            "content": "本服務不面向 18 歲以下之使用者。我們不會刻意蒐集兒童個人資料。若您認為您的孩子提供了個資，請立即聯繫我們，我們將儘速刪除相關資料。"
+        },
+        "accuracy": {
+            "title": "資料準確性聲明",
+            "content": "儘管我們力求準確，這些洞察結果可能無法完美反映您的實際收聽習慣，僅供參考使用。"
+        },
+        "changes": {
+            "title": "隱私政策變更",
+            "content": "我們可能不定期更新本隱私政策。所有變更將張貼於本頁面並更新「最後更新日期」。若您持續使用本服務，即表示您同意最新的政策內容。"
+        },
+        "contact": {
+            "title": "聯絡我們",
+            "content": "若需更多資訊，請透過 musicinsightsforspotify@gmail.com 聯繫我們。"
+        }
     },
     "terms": {
         "title": "使用條款",
         "last_updated": "最後更新日期：2024 年 12 月 24 日",
-        "introduction.title": "導言",
-        "introduction.content": "歡迎使用 Auralytics！當您存取或使用本網站，即表示您同意遵守本使用條款。若您不同意其中任何部分，請勿使用本服務。\n\n本服務僅提供 Spotify 相關數據的個人化分析，限作非商業用途。我們為獨立平台，與 Spotify AB 或其任何合作夥伴無任何隸屬、認可或贊助關係。",
-        "eligibility.title": "使用資格",
-        "eligibility.items": [
+        "introduction": {
+            "title": "導言",
+            "content": "歡迎使用 Auralytics！當您存取或使用本網站，即表示您同意遵守本使用條款。若您不同意其中任何部分，請勿使用本服務。\n\n本服務僅提供 Spotify 相關數據的個人化分析，限作非商業用途。我們為獨立平台，與 Spotify AB 或其任何合作夥伴無任何隸屬、認可或贊助關係。"
+        },
+        "eligibility": {
+            "title": "使用資格",
+            "items": [
             "年滿 18 歲。",
             "擁有有效的 Spotify 帳戶以連接本服務。",
             "同意遵守本條款以及所有適用的法律與法規。"
-        ],
-        "responsibilities.title": "使用者責任",
-        "responsibilities.intro": "使用本服務即表示您同意：",
-        "responsibilities.items": [
+            ]
+        },
+        "responsibilities": {
+            "title": "使用者責任",
+            "intro": "使用本服務即表示您同意：",
+            "items": [
             "僅以合法方式並遵守本條款使用本服務。",
             "提供正確、完整且最新的資訊。"
-        ],
-        "responsibilities.subitems": [
+            ],
+            "subitems": [
             "企圖駭入、中斷或破壞本網站或其服務。",
             "使用自動化工具（如爬蟲、機器人）擷取網站資料。",
             "濫用透過本服務提供的 Spotify API 數據。"
-        ],
-        "prohibited.title": "禁止行為",
-        "prohibited.items": [
+            ]
+        },
+        "prohibited": {
+            "title": "禁止行為",
+            "items": [
             "未經授權修改、散佈或重製本網站任何內容。",
             "使用本服務從事詐欺、非法或未授權之行為。",
             "轉售或商業化本服務所提供的資料或分析結果。"
-        ],
-        "ip.title": "智慧財產權",
-        "ip.content": "本網站所有內容，包括但不限於設計、文字、圖像、標誌與程式，皆為 Auralytics 所擁有，並受智慧財產權法律保護。",
-        "ip.items": [
+            ]
+        },
+        "ip": {
+            "title": "智慧財產權",
+            "content": "本網站所有內容，包括但不限於設計、文字、圖像、標誌與程式，皆為 Auralytics 所擁有，並受智慧財產權法律保護。",
+            "items": [
             "未經書面同意不得複製、散布或公開展示本站內容。",
             "不得以任何方式使用我們的品牌或商標。"
-        ],
-        "liability.title": "責任限制",
-        "liability.intro": "在法律允許的最大範圍內：",
-        "liability.items": [
+            ]
+        },
+        "liability": {
+            "title": "責任限制",
+            "intro": "在法律允許的最大範圍內：",
+            "items": [
             "本服務係以「現況」及「可用」方式提供，不保證任何明示或暗示的條件。"
-        ],
-        "liability.subitems": [
+            ],
+            "subitems": [
             "資料或收益的損失。",
             "服務中斷或技術問題。",
             "未經授權存取您的個人資料等情況。"
-        ],
-        "termination.title": "終止使用",
-        "termination.items": [
+            ]
+        },
+        "termination": {
+            "title": "終止使用",
+            "items": [
             "若違反本條款，我們保留隨時終止您對服務的存取權之權利，恕不另行通知。",
             "我們有權修改或終止服務的任何部分，無需事前通知。"
-        ],
-        "contact.title": "聯絡我們",
-        "contact.content": "如需更多資訊，請透過 musicinsightsforspotify@gmail.com 聯繫我們。"
+            ]
+        },
+        "contact": {
+            "title": "聯絡我們",
+            "content": "如需更多資訊，請透過 musicinsightsforspotify@gmail.com 聯繫我們。"
         }
+    }
 }
