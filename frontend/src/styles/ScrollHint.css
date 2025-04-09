@@ -3,7 +3,7 @@
     color: gray;
     opacity: 1;
     transition: opacity 0.5s ease-out;
-    margin: 230px 0px 50px 217px;
+    margin: 230px 0px 80px 217px;
 }
 
 .scroll-hint.hidden {
