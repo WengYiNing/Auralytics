@@ -1,9 +1,10 @@
 .footer {
-  padding: 20px 220px 10px 220px;
+  padding: 15px 220px 6px 220px;
   color: #333;
   font-size: 14px;
   margin-top: 50px;
   background-color: white;
+  border-top: 1px solid #e6e6e6;
 }
 
 .footer-grid {
@@ -12,6 +13,7 @@
   align-items: flex-end;
   flex-wrap: wrap;
   gap: 20px;
+  margin-bottom: 6px;
 }
 
 .footer-left select {
@@ -49,4 +51,5 @@
   white-space: normal;
   overflow: visible;
   text-overflow: unset;
+  text-align: center;
 }
