@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import '../styles/App.css';
+import '../styles/LandingPage.css';
 import ScrollHint from '../components/ScrollHint'; 
 import { useTranslation } from 'react-i18next';
 const BASE_URL = process.env.REACT_APP_BACKEND_URL;
@@ -31,10 +31,16 @@ const App: React.FC = () => {
     <div>
       <Header />
       <div className="start-content">
-        <p >
-          {t('home.intro')}
-        </p>
-
+      <p>
+        {t('home.intro')
+          .split('\n')
+          .map((line: string, idx: number) => (
+            <React.Fragment key={idx}>
+              {line}
+              <br />
+            </React.Fragment>
+        ))}
+      </p>
         <a href= {`${BASE_URL}/login`} className="please-login">
           {t('home.login_prompt')}
         </a>
@@ -56,7 +62,7 @@ const App: React.FC = () => {
                 </div>
                   <div className='intro-words'>
                     <p className='function-title'>{t('home.top_artists_title')}</p>
-                    <p>{t('home.artists_desc')}</p>
+                    <p>{t('home.top_artists_desc')}</p>
                   </div>
                 </div>
                 <div className="intro-item">
@@ -74,7 +80,7 @@ const App: React.FC = () => {
                 </div>
                   <div className='intro-words'>
                     <p className='function-title'>{t('home.top_genres_title')}</p>
-                    <p>{t('home.genres_desc')}</p>
+                    <p>{t('home.top_genres_desc')}</p>
                   </div>
                 </div>
                 <div className="intro-item">
