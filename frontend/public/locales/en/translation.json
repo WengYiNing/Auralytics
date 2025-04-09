@@ -19,7 +19,7 @@
        "logout": "Log Out"
     },
     "footer": {
-      "disclaimer": "Music data, artist images, and album covers are provided by Spotify. Spotify is a trademark of Spotify AB.\nWe are not affiliated with Spotify AB or its partners, and our service is only intended for personal use of music data.",
+      "disclaimer": "Music data, artist images, and album covers are provided by Spotify. Spotify is a trademark of Spotify AB.\nWe are not affiliated with Spotify AB or its partners.",
       "terms": "Terms of Use",
       "privacy": "Privacy Policy",
       "language": "Language"

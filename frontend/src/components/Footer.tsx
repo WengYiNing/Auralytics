@@ -12,28 +12,26 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="footer">
-      <div id="root">
-        <div className="content">
-          <div className='trade-mark-and-disclaimer'>
-            <p>{t('footer.disclaimer')}</p>
-            <div className='social-link'>
-              <Link to="https://x.com/AuralyticsMusic">X</Link>
-              <Link to="https://github.com/WengYiNing/Auralytics">Github</Link>
-            </div>
-          </div>
-          <div className='policy-and-trademark'>
-            <p className='trademark'>© 2025 Auralytics</p>
-            <div className='policy'>
-              <Link to="/TermsOfUse">{t('footer.terms')}</Link>
-              <Link to="/privacy">{t('footer.privacy')}</Link>
-            </div>
-            <select onChange={(e) => i18n.changeLanguage(e.target.value)} value={i18n.language}>
-              <option value="en">English</option>
-              <option value="zh-TW">繁體中文</option>
-            </select>
-          </div>
+      <div className="footer-grid">
+        <div className="footer-left">
+          <select onChange={handleLanguageChange} value={i18n.language}>
+            <option value="en">English</option>
+            <option value="zh-TW">繁體中文</option>
+          </select>
+        </div>
+
+        <div className="footer-right">
+          <a href="https://github.com/WengYiNing/Auralytics" target="_blank" rel="noopener noreferrer">Github</a>
+          <a href="https://x.com/AuralyticsMusic" target="_blank" rel="noopener noreferrer">X</a>
+          <Link to="/TermsOfUse">{t('footer.terms')}</Link>
+          <Link to="/privacy">{t('footer.privacy')}</Link>
+          <span className="trademark">© 2025 Auralytics</span>
         </div>
       </div>
+
+      <p className="footer-disclaimer">
+        {t('footer.disclaimer')}
+      </p>
     </footer>
   );
 };
