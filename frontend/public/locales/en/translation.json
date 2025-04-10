@@ -11,7 +11,12 @@
       "top_genres_title": "Top genres",
       "top_genres_desc": "Discover your top 10 most-listened music genres and see which styles define your unique taste.",
       "top_eras_title": "Top eras",
-      "top_eras_desc": "Discover your top 5 most-listened eras and reveal your music history."
+      "top_eras_desc": "Discover your top 5 most-listened eras and reveal your music history.",
+      "track": "Track",
+      "artist": "Artist",
+      "album": "Album",
+      "genre": "Genre",
+      "era": "Era"
     },
     "header": {
        "account": "account",
@@ -30,7 +35,7 @@
       "last_12_months": "Last 12 months"
     },
     "scroll_hint": {
-        "hint": "Scroll to explore"
+        "hint": "↓ Scroll to explore"
     },
     "function": {
         "top_tracks": "Top tracks",

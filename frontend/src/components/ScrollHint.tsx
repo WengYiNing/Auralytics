@@ -21,7 +21,7 @@ const ScrollHint: React.FC = () => {
 
   return (
     <div className={`scroll-hint ${visible ? 'visible' : 'hidden'}`}>
-      <span>↓ {t('scroll_hint.hint')}</span>
+      <span>{t('scroll_hint.hint')}</span>
     </div>
   );
 };

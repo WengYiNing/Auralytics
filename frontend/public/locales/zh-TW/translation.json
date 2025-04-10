@@ -11,7 +11,12 @@
         "top_genres_title": "熱門類型",
         "top_genres_desc": "發現你最常聆聽的 10 種音樂類型，了解哪些風格塑造了你的品味。",
         "top_eras_title": "熱門年代",
-        "top_eras_desc": "探索你最常聽的 5 個年代，揭示你的音樂歷史。"
+        "top_eras_desc": "探索你最常聽的 5 個年代，揭示你的音樂歷史。",
+        "track": "歌曲",
+        "artist": "歌手",
+        "album": "專輯",
+        "genre": "類型",
+        "era": "年代"
     },
     "header": {
         "account": "帳戶",
@@ -30,7 +35,7 @@
         "last_12_months": "過去 12 個月"
     },
     "scroll_hint": {
-        "hint": "向下捲動探索"
+        "hint": "↓ 向下捲動探索"
     },
     "function": {
         "top_tracks": "熱門歌曲",
