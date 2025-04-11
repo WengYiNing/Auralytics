@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../styles/LandingPage.css';
@@ -97,8 +96,6 @@ const App: React.FC = () => {
         <p className="demo-caption">
           {t('home.demo_caption') || 'Genre breakdown, favorite tracks, and visual insights – personalized for you.'}
         </p>
-
-        <ScrollHint />
       </div>
 
       <div ref={boxesRef} className={`intro-function-content ${isScrolled ? 'visible' : ''}`}>

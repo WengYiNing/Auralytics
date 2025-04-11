@@ -1,3 +1,28 @@
+.start-content p,
+.start-content a.please-login {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+.start-content p {
+  animation-delay: 0.3s;
+}
+
+.start-content a.please-login {
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .intro-function-content.visible {
   opacity: 1;
   transform: translateY(0px);
@@ -33,6 +58,12 @@
   object-fit: cover;
   transform: scale(1.15); 
   border-radius: 12px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.intro-image:hover {
+  transform: scale(1.17);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 .function-selector {
@@ -71,6 +102,7 @@
   padding: 80px 20px;
   text-align: center;
   background-color: #ffffff;
+  margin-bottom: 150px;
 }
 
 .demo-title {
@@ -91,6 +123,11 @@
   height: auto;
   border-radius: 12px;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.demo-image:hover {
+  transform: scale(1.02);
 }
 
 .demo-caption {

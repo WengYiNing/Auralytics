@@ -16,7 +16,10 @@
       "artist": "Artist",
       "album": "Album",
       "genre": "Genre",
-      "era": "Era"
+      "era": "Era",
+      "demo_title": "Auralytics",
+      "demo_subtitle": "Tracks, artists, albums, genres, and eras — insights tailored to your listening.",
+      "demo_caption": "Minimal, lightweight, and crystal clear"
     },
     "header": {
        "account": "account",

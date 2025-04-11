@@ -16,7 +16,10 @@
         "artist": "歌手",
         "album": "專輯",
         "genre": "類型",
-        "era": "年代"
+        "era": "年代",
+        "demo_title": "Auralytics",
+        "demo_subtitle": "歌曲、歌手、專輯、風格與年代，專屬於你的聆聽洞察。",
+        "demo_caption": "簡約、輕巧、一目瞭然"
     },
     "header": {
         "account": "帳戶",
