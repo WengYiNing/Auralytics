@@ -1,26 +1,39 @@
-.start-content p,
-.start-content a.please-login {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s ease forwards;
-}
-.start-content p {
-  animation-delay: 0.3s;
+.demo-preview-container {
+  padding: 20px 20px 80px;
+  text-align: center;
+  background-color: #ffffff;
+  margin-bottom: 150px;
 }
 
-.start-content a.please-login {
-  animation-delay: 0.6s;
+.home-logo {
+  width: 110px;
+  margin-bottom: -15px;
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.demo-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.demo-image {
+  width: 90%;
+  max-width: 750px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.demo-image:hover {
+  transform: scale(1.02);
+}
+
+.demo-caption {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
 }
 
 .intro-function-content.visible {
@@ -47,9 +60,10 @@
   max-width: 800px;
 }
 
-.intro-item.single .function-title {
-  font-size: 24px;
-  margin-bottom: 15px;
+.intro-words p {
+  white-space: nowrap;
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .intro-image {
@@ -92,46 +106,4 @@
 .selector-button.active {
   background-color: #e5e5e5;
   font-weight: 500;
-}
-.intro-words p {
-  white-space: nowrap;
-  text-align: center;
-  margin-bottom: 0px;
-}
-.demo-preview-container {
-  padding: 80px 20px;
-  text-align: center;
-  background-color: #ffffff;
-  margin-bottom: 150px;
-}
-
-.demo-title {
-  font-size: 28px;
-  font-weight: 600;
-  margin-bottom: 12px;
-}
-
-.demo-subtitle {
-  font-size: 16px;
-  color: #666;
-  margin-bottom: 32px;
-}
-
-.demo-image {
-  width: 90%;
-  max-width: 750px;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.demo-image:hover {
-  transform: scale(1.02);
-}
-
-.demo-caption {
-  margin-top: 20px;
-  font-size: 14px;
-  color: #555;
 }

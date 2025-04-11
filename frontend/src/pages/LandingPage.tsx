@@ -2,9 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../styles/LandingPage.css';
-import ScrollHint from '../components/ScrollHint'; 
 import { useTranslation } from 'react-i18next';
-const BASE_URL = process.env.REACT_APP_BACKEND_URL;
 
 const functionList = [
   {
@@ -54,6 +52,7 @@ const App: React.FC = () => {
         }
       }
     };
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -63,41 +62,21 @@ const App: React.FC = () => {
   return (
     <div>
       <Header />
-      <div className="start-content">
-        <p>
-          {t('home.intro')
-            .split('\n')
-            .map((line: string, idx: number) => (
-              <React.Fragment key={idx}>
-                {line}
-                <br />
-              </React.Fragment>
-          ))}
-        </p>
-        <a href={`${BASE_URL}/login`} className="please-login">
-          {t('home.login_prompt')}
-        </a>
-      </div>
-
-      <ScrollHint />
-
       <div className="demo-preview-container">
-        <h2 className="demo-title">{t('home.demo_title') || 'See your music story in action'}</h2>
+        <img src="/logo-removebg.png" alt="Auralytics logo" className="home-logo" />
         <p className="demo-subtitle">
           {t('home.demo_subtitle') || "Here's an example of what you'll get after logging in."}
         </p>
-
         <img
           src="https://imgur.com/j2BGodl.png"
           alt="Demo Preview"
           className="demo-image"
         />
-
         <p className="demo-caption">
           {t('home.demo_caption') || 'Genre breakdown, favorite tracks, and visual insights – personalized for you.'}
         </p>
       </div>
-
+      
       <div ref={boxesRef} className={`intro-function-content ${isScrolled ? 'visible' : ''}`}>
         <div className="intro-item single">
           <div className="intro-image-container">
@@ -123,6 +102,6 @@ const App: React.FC = () => {
       <Footer />
     </div>
   );
-}
+};
 
 export default App;
