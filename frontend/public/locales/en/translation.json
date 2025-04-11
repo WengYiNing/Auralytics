@@ -3,23 +3,23 @@
       "intro": "Discover your unique music story.\n\nExplore your top tracks, artists, albums, genres, and musical eras. Dive into your personalized Spotify insights!",
       "login_prompt": "Login with your Spotify account to start...",
       "top_tracks_title": "Top tracks",
-      "top_tracks_desc": "Instantly see your top 50 most-played tracks and relive the songs that build your vibe.",
+      "top_tracks_desc": "Your top 50 most-played tracks, explore the songs that build your vibe.",
       "top_artists_title": "Top artists",
-      "top_artists_desc": "Explore your top 20 most-listened artists and see who's been dominating your playlists.",
+      "top_artists_desc": "Your top 20 most-listened artists, see who's been dominating your playlists.",
       "top_albums_title": "Top albums",
-      "top_albums_desc": "Dive into your top 10 most-listened albums and see what's been on repeat.",
+      "top_albums_desc": "Your top 10 most-listened albums, find what's been on repeat.",
       "top_genres_title": "Top genres",
-      "top_genres_desc": "Discover your top 10 most-listened music genres and see which styles define your unique taste.",
+      "top_genres_desc": "Your top 10 most-listened music genres, discover which styles define your unique taste.",
       "top_eras_title": "Top eras",
-      "top_eras_desc": "Discover your top 5 most-listened eras and reveal your music history.",
+      "top_eras_desc": "Your top 5 most-listened eras, reveal your music history.",
       "track": "Track",
       "artist": "Artist",
       "album": "Album",
       "genre": "Genre",
       "era": "Era",
       "demo_title": "Auralytics",
-      "demo_subtitle": "Tracks, artists, albums, genres, and eras — insights tailored to your listening.",
-      "demo_caption": "Minimal, lightweight, and crystal clear"
+      "demo_subtitle": "Tracks, artists, albums, genres, and eras — discover your unique music story.",
+      "demo_caption": "Streamlined, Lightweight, Crystal clear"
     },
     "header": {
        "account": "account",
@@ -58,7 +58,7 @@
     "artists": {
       "title": "Top artists",
       "popularity": "Popularity",
-      "popularity_description": "The popularity of the artist is between 0 and 100, with 100 being the most popular. It is calculated from the popularity of all the artist's tracks.",
+      "popularity_description": "The popularity of the artist is between 0 and 100, with 100 being the most popular. It is provided by Spotify.",
       "unknown_genre": "Unknown",
       "spotify_logo_alt": "Spotify Logo"
     },
@@ -154,11 +154,6 @@
         "items": [
           "Use the service only for lawful purposes and in compliance with these Terms.",
           "Provide accurate, complete, and up-to-date information when using the service."
-        ],
-        "subitems": [
-          "Attempting to hack, disrupt, or damage the website or its services.",
-          "Using automated tools (e.g., bots, scrapers) to collect data from our website.",
-          "Misusing the Spotify API data provided through our service."
         ]
       },
       "prohibited": {
@@ -166,7 +161,10 @@
         "items": [
           "Modifying, distributing, or reproducing any part of our website or its content without permission.",
           "Using the service to engage in fraudulent, illegal, or unauthorized activities.",
-          "Reselling or commercializing the data or insights provided by our service."
+          "Reselling or commercializing the data or insights provided by our service.",
+          "Attempting to hack, disrupt, or damage the website or its services.",
+          "Using automated tools (e.g., bots, scrapers) to collect data from our website.",
+          "Misusing the Spotify API data provided through our service."
         ]
       },
       "ip": {
@@ -181,12 +179,8 @@
         "title": "Limitation of Liability",
         "intro": "To the fullest extent permitted by law:",
         "items": [
-          "Auralytics is provided \"as is\" and \"as available\" without warranties of any kind, express or implied."
-        ],
-        "subitems": [
-          "Loss of data or profits.",
-          "Service interruptions or technical issues.",
-          "Any unauthorized access to your personal data."
+          "Auralytics is provided \"as is\" and \"as available\" without warranties of any kind, express or implied.",
+          "We are not liable for any damages, including but not limited to: loss of data or profits, service interruptions or technical issues, any unauthorized access to your personal data."
         ]
       },
       "termination": {

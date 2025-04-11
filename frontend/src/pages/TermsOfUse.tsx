@@ -41,11 +41,6 @@ const TermsOfUse: React.FC = () => {
             <li key={idx}>{item}</li>
           ))}
         </ul>
-        <ul>
-          {Array.isArray(responsibilitiesSubitems) && responsibilitiesSubitems.map((item, idx) => (
-            <li key={idx}>{item}</li>
-          ))}
-        </ul>
 
         <h4>{t('terms.prohibited.title')}</h4>
         <ul>

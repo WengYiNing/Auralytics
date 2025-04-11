@@ -1,0 +1,199 @@
+{
+    "home": {
+      "intro": "探索你独特的音乐故事。\n\n查看你的热门歌曲、歌手、专辑、音乐类型和年代，一起深入你的 Spotify 音乐洞察！",
+      "login_prompt": "使用你的 Spotify 账号登录开始探索...",
+      "top_tracks_title": "热门歌曲",
+      "top_tracks_desc": "你最常播放的 50 首歌曲，塑造你音乐风格的旋律。",
+      "top_artists_title": "热门歌手",
+      "top_artists_desc": "你最常聆听的 20 位歌手，究竟谁占据了你的播放清单？",
+      "top_albums_title": "热门专辑",
+      "top_albums_desc": "你最常聆听的 10 张专辑，哪些专辑让你反复播放？",
+      "top_genres_title": "热门类型",
+      "top_genres_desc": "你最常聆听的 10 种音乐类型，了解哪些风格塑造了你的品味。",
+      "top_eras_title": "热门年代",
+      "top_eras_desc": "你最常听的 5 个年代，揭示你的音乐年鉴。",
+      "track": "歌曲",
+      "artist": "歌手",
+      "album": "专辑",
+      "genre": "类型",
+      "era": "年代",
+      "demo_title": "Auralytics",
+      "demo_subtitle": "歌曲、歌手、专辑、风格与年代，专属于你的聆听洞察。",
+      "demo_caption": "简约。轻巧。一目了然"
+    },
+    "header": {
+      "account": "账户",
+      "login": "登录",
+      "logout": "登出"
+    },
+    "footer": {
+      "disclaimer": "音乐资料、歌手图片与专辑封面由 Spotify 提供，Spotify 为 Spotify AB 的商标，\n我们与 Spotify AB 或其合作伙伴无任何关联。",
+      "terms": "使用条款",
+      "privacy": "隐私政策",
+      "language": "语言"
+    },
+    "time_range": {
+      "last_1_month": "过去 1 个月",
+      "last_6_months": "过去 6 个月",
+      "last_12_months": "过去 12 个月"
+    },
+    "scroll_hint": {
+      "hint": "↓ 向下滚动探索"
+    },
+    "function": {
+      "top_tracks": "歌曲排行",
+      "top_artists": "歌手排行",
+      "top_albums": "专辑排行",
+      "top_genres": "类型排行",
+      "top_eras": "年代排行"
+    },
+    "tracks": {
+      "title": "歌曲排行",
+      "spotify_logo_alt": "Spotify 标志"
+    },
+    "albums": {
+      "title": "专辑排行",
+      "spotify_logo_alt": "Spotify 标志"
+    },
+    "artists": {
+      "title": "歌手排行",
+      "popularity": "人气指数",
+      "popularity_description": "歌手的人气介于 0 到 100，100 表示最受欢迎，此分数由 Spotify 提供。",
+      "unknown_genre": "未知",
+      "spotify_logo_alt": "Spotify 标志"
+    },
+    "genres": {
+      "title": "类型排行",
+      "spotify_logo_alt": "Spotify 标志"
+    },
+    "eras": {
+      "title": "年代排行",
+      "spotify_logo_alt": "Spotify 标志"
+    },
+    "privacy": {
+      "title": "隐私政策",
+      "last_updated": "最后更新日期：2024 年 12 月 24 日",
+      "introduction": {
+        "title": "导言",
+        "content": "欢迎使用 Auralytics，您的隐私是我们的首要考量。本隐私政策说明我们在您使用本服务时如何收集、使用及保护您的个人信息。本服务为独立应用，通过 Spotify API 提供数据展示，并非 Spotify AB 或其合作伙伴的官方产品。\n\n使用本服务即表示您同意按照本政策收集并使用您的信息。"
+      },
+      "collect": {
+        "title": "我们收集的信息",
+        "personal_data": "1. 个人资料",
+        "personal_data_items": [
+          "电子邮件地址",
+          "Spotify 用户 ID",
+          "API 访问令牌"
+        ],
+        "personal_data_footer": "我们收集这些信息仅为实现服务核心功能并提升您的使用体验。我们不会将您的个人信息出售、交易或分享给第三方。",
+        "cookies": "2. Cookie",
+        "cookies_items": [
+          "必要 Cookie：网站正常运行所必需。",
+          "分析 Cookie：由第三方服务（如 Google Analytics）提供，用于跟踪使用行为并优化服务。",
+          "广告 Cookie：用于通过 Google Ads 等服务投放个性化广告。"
+        ],
+        "cookies_footer": "您可在浏览器设置中管理或禁用 Cookie，但这可能影响本服务的部分功能。"
+      },
+      "usage": {
+        "title": "我们如何使用您的信息",
+        "items": [
+          "启用与维护本服务。",
+          "个性化您的使用体验。",
+          "检测、防止并解决安全或技术问题。",
+          "其他在收集时说明或经您同意的用途。"
+        ]
+      },
+      "thirdparty": {
+        "title": "第三方服务",
+        "items": [
+          "Spotify API：用于提取并展示与您相关的 Spotify 数据。",
+          "Google Analytics：用于网站流量分析。",
+          "Google Ads：用于投放个性化广告。"
+        ],
+        "footer": "请参考各第三方服务的隐私政策以获取更多信息。"
+      },
+      "retention": {
+        "title": "数据保留",
+        "content": "您的数据仅会在我们的数据库中保留 1 小时，之后将自动过期并删除。"
+      },
+      "children": {
+        "title": "儿童隐私",
+        "content": "本服务的目标用户并非 18 岁以下的用户。我们不会故意收集儿童个人信息，若您认为您的孩子提供了个人信息，请立即联系我们，我们将尽快删除相关数据。"
+      },
+      "accuracy": {
+        "title": "数据准确性声明",
+        "content": "尽管我们力求准确，这些洞察结果可能无法完全反映您的实际收听习惯，仅供参考使用。"
+      },
+      "changes": {
+        "title": "隐私政策变更",
+        "content": "我们可能会不定期更新本隐私政策。所有变更将发布于本页面并更新“最后更新日期”。若您继续使用本服务，即表示您同意最新的政策内容。"
+      },
+      "contact": {
+        "title": "联系我们",
+        "content": "如需更多信息，请通过 musicinsightsforspotify@gmail.com 联系我们。"
+      }
+    },
+    "terms": {
+      "title": "使用条款",
+      "last_updated": "最后更新日期：2024 年 12 月 24 日",
+      "introduction": {
+        "title": "导言",
+        "content": "欢迎使用 Auralytics。当您访问或使用本网站，即表示您同意遵守我们的使用条款。若您不同意其中任何部分，我们欢迎并重视您的意见，请随时联系我们。本服务仅用于展示与 Spotify 相关的个性化数据，限于非商业用途。我们是独立平台，与 Spotify AB 或其任何合作伙伴无任何隶属、认可或赞助关系。"
+      },
+      "eligibility": {
+        "title": "使用资格",
+        "items": [
+          "用户须年满 18 岁。",
+          "用户须拥有有效的 Spotify 账户以连接本服务。",
+          "用户须同意遵守本条款以及所有适用的相关法律与法规。"
+        ]
+      },
+      "responsibilities": {
+        "title": "用户责任",
+        "intro": "使用本服务即表示您同意：",
+        "items": [
+          "仅以合法方式并遵守本条款使用本服务。",
+          "确保提供正确、完整且最新的信息。"
+        ]
+      },
+      "prohibited": {
+        "title": "禁止行为",
+        "items": [
+          "未经授权修改、传播或复制本网站任何内容。",
+          "使用本服务从事欺诈、非法或未经授权的行为。",
+          "转售或商业化本服务提供的数据或分析结果。",
+          "企图入侵、干扰或破坏本网站或其服务。",
+          "使用自动化工具（如爬虫、机器人）抓取网站数据。",
+          "滥用通过本服务提供的 Spotify API 数据。"
+        ]
+      },
+      "ip": {
+        "title": "知识产权",
+        "content": "本网站所有内容，包括但不限于设计、文字、图像、标志与程序，皆为 Auralytics 所有，并受知识产权法律保护。",
+        "items": [
+          "未经书面许可不得复制、传播或公开展示本站内容。",
+          "不得以任何方式使用我们的品牌或商标。"
+        ]
+      },
+      "liability": {
+        "title": "责任限制",
+        "intro": "在法律允许的最大范围内：",
+        "items": [
+          "本服务以“现状”及“可用”方式提供，不保证任何明示或暗示的条件。",
+          "我们不对任何损害（包括直接、间接、附带或后果性的）承担责任，包括但不限于数据或收益的损失、服务中断或技术问题、未经授权访问您的个人信息等情况。"
+        ]
+      },
+      "termination": {
+        "title": "终止使用",
+        "items": [
+          "若违反本条款，我们保留随时终止您使用本服务的权利，恕不另行通知。",
+          "我们有权修改或终止服务的任何部分，无需事先通知。"
+        ]
+      },
+      "contact": {
+        "title": "联系我们",
+        "content": "如需更多信息，请通过 musicinsightsforspotify@gmail.com 联系我们。"
+      }
+    }
+  }
+  
