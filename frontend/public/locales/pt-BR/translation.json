@@ -1,0 +1,198 @@
+{
+    "home": {
+        "intro": "Descubra sua história musical única.\n\nExplore suas principais faixas, artistas, álbuns, gêneros e eras musicais. Mergulhe em seus insights personalizados do Spotify!",
+        "login_prompt": "Faça login com sua conta Spotify para começar...",
+        "top_tracks_title": "Principais faixas",
+        "top_tracks_desc": "Suas 50 faixas mais tocadas — explore as músicas que definem seu estilo.",
+        "top_artists_title": "Principais artistas",
+        "top_artists_desc": "Seus 20 artistas mais ouvidos — veja quem domina suas playlists.",
+        "top_albums_title": "Principais álbuns",
+        "top_albums_desc": "Seus 10 álbuns mais ouvidos — descubra o que está em repetição.",
+        "top_genres_title": "Principais gêneros",
+        "top_genres_desc": "Seus 10 gêneros musicais mais ouvidos — descubra quais estilos definem seu gosto único.",
+        "top_eras_title": "Principais eras",
+        "top_eras_desc": "Suas 5 eras musicais mais ouvidas — revele sua história musical.",
+        "track": "Faixa",
+        "artist": "Artista",
+        "album": "Álbum",
+        "genre": "Gênero",
+        "era": "Era",
+        "demo_title": "Auralytics",
+        "demo_subtitle": "Faixas, artistas, álbuns, gêneros e eras — descubra sua história musical única.",
+        "demo_caption": "Simplificado, Leve, Cristalino"
+    },
+    "header": {
+        "account": "conta",
+        "login": "Entrar",
+        "logout": "Sair"
+    },
+    "footer": {
+        "disclaimer": "Dados musicais, imagens de artistas e capas de álbuns são fornecidos pelo Spotify. Spotify é uma marca registrada da Spotify AB.\nNão somos afiliados à Spotify AB ou seus parceiros.",
+        "terms": "Termos de Uso",
+        "privacy": "Política de Privacidade",
+        "language": "Idioma"
+    },
+    "time_range": {
+        "last_1_month": "Último 1 mês",
+        "last_6_months": "Últimos 6 meses",
+        "last_12_months": "Últimos 12 meses"
+    },
+    "scroll_hint": {
+        "hint": "↓ Role para explorar"
+    },
+    "function": {
+        "top_tracks": "Principais faixas",
+        "top_artists": "Principais artistas",
+        "top_albums": "Principais álbuns",
+        "top_genres": "Principais gêneros",
+        "top_eras": "Principais eras"
+    },
+    "tracks": {
+        "title": "Principais faixas",
+        "spotify_logo_alt": "Logotipo do Spotify"
+    },
+    "albums": {
+        "title": "Principais álbuns",
+        "spotify_logo_alt": "Logotipo do Spotify"
+    },
+    "artists": {
+        "title": "Principais artistas",
+        "popularity": "Popularidade",
+        "popularity_description": "A popularidade do artista varia de 0 a 100, sendo 100 o mais popular. Esse dado é fornecido pelo Spotify.",
+        "unknown_genre": "Desconhecido",
+        "spotify_logo_alt": "Logotipo do Spotify"
+    },
+    "genres": {
+        "title": "Principais gêneros",
+        "spotify_logo_alt": "Logotipo do Spotify"
+    },
+    "eras": {
+        "title": "Principais eras",
+        "spotify_logo_alt": "Logotipo do Spotify"
+    },
+    "privacy": {
+      "title": "Política de Privacidade",
+      "last_updated": "Última atualização: 24 de dezembro de 2024",
+      "introduction": {
+        "title": "Introdução",
+        "content": "Bem-vindo ao Auralytics. Sua privacidade é extremamente importante para nós. Esta Política de Privacidade explica como coletamos, usamos e protegemos suas informações pessoais ao utilizar nosso serviço. Nosso serviço é uma aplicação independente que utiliza a API do Spotify para fornecer insights e não está associado ao Spotify AB, seus parceiros ou afiliados.\n\nAo utilizar nosso serviço, você concorda com a coleta e uso das informações de acordo com esta política."
+      },
+      "collect": {
+        "title": "Informações que Coletamos",
+        "personal_data": "1. Dados Pessoais",
+        "personal_data_items": [
+          "Endereço de e-mail",
+          "ID do Spotify",
+          "Token de acesso à API"
+        ],
+        "personal_data_footer": "Essas informações são coletadas para possibilitar funcionalidades essenciais e melhorar sua experiência de uso. Não vendemos, trocamos ou compartilhamos suas informações pessoais com terceiros.",
+        "cookies": "2. Cookies",
+        "cookies_items": [
+          "Cookies Essenciais: Necessários para o funcionamento adequado do site.",
+          "Cookies de Análise: Fornecidos por serviços de terceiros como o Google Analytics para rastrear o comportamento do usuário e melhorar o serviço.",
+          "Cookies de Publicidade: Utilizados para exibir anúncios direcionados por meio de serviços como o Google Ads."
+        ],
+        "cookies_footer": "Você pode gerenciar ou desativar os cookies nas configurações do seu navegador, mas isso pode afetar algumas funcionalidades do nosso serviço."
+      },
+      "usage": {
+        "title": "Como Usamos seus Dados",
+        "items": [
+          "Para habilitar e manter nosso serviço.",
+          "Para personalizar sua experiência.",
+          "Para detectar, prevenir e resolver questões de segurança ou técnicas.",
+          "Para outros fins divulgados no momento da coleta ou com o seu consentimento."
+        ]
+      },
+      "thirdparty": {
+        "title": "Serviços de Terceiros",
+        "items": [
+          "API do Spotify: Para buscar e exibir seus dados relacionados ao Spotify.",
+          "Google Analytics: Para análise de tráfego do site.",
+          "Google Ads: Para exibição de anúncios personalizados."
+        ],
+        "footer": "Consulte as políticas de privacidade dos respectivos serviços para obter mais informações."
+      },
+      "retention": {
+        "title": "Retenção de Dados",
+        "content": "Seus dados serão armazenados em nosso sistema por apenas 1 hora. Após esse período, os dados expirarão e serão automaticamente excluídos."
+      },
+      "children": {
+        "title": "Privacidade de Crianças",
+        "content": "Nosso serviço não é direcionado a menores de 18 anos. Não coletamos intencionalmente dados pessoais de crianças. Se você acredita que seu filho forneceu informações pessoais, entre em contato conosco imediatamente para que possamos excluir esses dados."
+      },
+      "accuracy": {
+        "title": "Declaração de Precisão dos Dados",
+        "content": "Embora nos esforcemos para garantir precisão, esses insights podem não refletir perfeitamente seus hábitos de escuta e devem ser usados apenas como referência."
+      },
+      "changes": {
+        "title": "Alterações nesta Política de Privacidade",
+        "content": "Podemos atualizar esta Política de Privacidade periodicamente. Quaisquer alterações serão publicadas nesta página com a nova data de \"Última atualização\". O uso continuado do serviço após as alterações significa que você reconhece e aceita a política atualizada."
+      },
+      "contact": {
+        "title": "Fale Conosco",
+        "content": "Para mais informações, entre em contato pelo e-mail musicinsightsforspotify@gmail.com."
+      }
+    },
+    "terms": {
+      "title": "Termos de Uso",
+      "last_updated": "Última atualização: 24 de dezembro de 2024",
+      "introduction": {
+        "title": "Introdução",
+        "content": "Bem-vindo ao Auralytics! Ao acessar ou utilizar nosso site, você concorda com estes Termos de Uso. Se você não concordar com qualquer parte dos Termos, por favor, não utilize nosso serviço.\n\nNosso serviço fornece insights baseados em dados do Spotify para uso pessoal e não comercial. Somos uma plataforma independente e não somos afiliados, endossados ou patrocinados pela Spotify AB ou por qualquer um de seus parceiros."
+      },
+      "eligibility": {
+        "title": "Requisitos de Elegibilidade",
+        "items": [
+          "Ter pelo menos 18 anos de idade.",
+          "Ter uma conta válida do Spotify para conectar ao nosso serviço.",
+          "Concordar em cumprir estes Termos e quaisquer leis ou regulamentos aplicáveis."
+        ]
+      },
+      "responsibilities": {
+        "title": "Responsabilidades do Usuário",
+        "intro": "Ao utilizar nosso serviço, você concorda em:",
+        "items": [
+          "Utilizar o serviço apenas para fins legais e em conformidade com estes Termos.",
+          "Fornecer informações precisas, completas e atualizadas ao utilizar o serviço."
+        ]
+      },
+      "prohibited": {
+        "title": "Atividades Proibidas",
+        "items": [
+          "Modificar, distribuir ou reproduzir qualquer parte do nosso site ou conteúdo sem permissão.",
+          "Utilizar o serviço para atividades fraudulentas, ilegais ou não autorizadas.",
+          "Revender ou comercializar os dados ou insights fornecidos pelo nosso serviço.",
+          "Tentar invadir, interromper ou danificar o site ou seus serviços.",
+          "Usar ferramentas automatizadas (por exemplo, bots, scrapers) para coletar dados do nosso site.",
+          "Usar indevidamente os dados da API do Spotify fornecidos pelo nosso serviço."
+        ]
+      },
+      "ip": {
+        "title": "Propriedade Intelectual",
+        "content": "Todo o conteúdo do nosso site, incluindo, mas não se limitando a, designs, textos, gráficos, logotipos e software, é propriedade do Auralytics e está protegido por leis de propriedade intelectual.",
+        "items": [
+          "Copiar, distribuir ou exibir publicamente nosso conteúdo sem consentimento por escrito.",
+          "Utilizar nossa marca ou logotipo de qualquer forma sem autorização."
+        ]
+      },
+      "liability": {
+        "title": "Limitação de Responsabilidade",
+        "intro": "Na máxima extensão permitida por lei:",
+        "items": [
+          "O Auralytics é fornecido \"no estado em que se encontra\" e \"conforme disponível\", sem garantias de qualquer tipo, expressas ou implícitas.",
+          "Não nos responsabilizamos por quaisquer danos, incluindo, mas não se limitando a: perda de dados ou lucros, interrupções de serviço ou problemas técnicos, acesso não autorizado aos seus dados pessoais."
+        ]
+      },
+      "termination": {
+        "title": "Encerramento",
+        "items": [
+          "Suspender ou encerrar seu acesso ao serviço a qualquer momento, sem aviso prévio, por violar estes Termos.",
+          "Modificar ou descontinuar qualquer parte do serviço sem aviso prévio."
+        ]
+      },
+      "contact": {
+        "title": "Fale Conosco",
+        "content": "Para mais informações, entre em contato pelo e-mail musicinsightsforspotify@gmail.com."
+      }
+    }
+}

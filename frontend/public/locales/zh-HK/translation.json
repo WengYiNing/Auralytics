@@ -1,0 +1,199 @@
+{
+    "home": {
+      "intro": "探索你獨一無二的音樂故事。\n\n了解你最常聽嘅歌曲、歌手、專輯、音樂類型同年代，深入發掘你嘅 Spotify 音樂習慣！",
+      "login_prompt": "用你嘅 Spotify 帳戶登入即刻開始探索...",
+      "top_tracks_title": "熱門歌曲",
+      "top_tracks_desc": "你最常播放嘅 50 首歌，組成你音樂風格嘅旋律。",
+      "top_artists_title": "熱門歌手",
+      "top_artists_desc": "你最常聽嘅 20 位歌手，邊個佔據咗你嘅播放清單？",
+      "top_albums_title": "熱門專輯",
+      "top_albums_desc": "你最常聽嘅 10 張專輯，邊啲歌你成日 loop?",
+      "top_genres_title": "熱門類型",
+      "top_genres_desc": "你最愛聽嘅 10 種音樂風格，了解咩塑造咗你嘅音樂品味。",
+      "top_eras_title": "熱門年代",
+      "top_eras_desc": "你最常聽嘅 5 個年代，揭示你嘅音樂歷程。",
+      "track": "歌曲",
+      "artist": "歌手",
+      "album": "專輯",
+      "genre": "類型",
+      "era": "年代",
+      "demo_title": "Auralytics",
+      "demo_subtitle": "歌曲、歌手、專輯、風格同年代 — 屬於你嘅專屬音樂洞察。",
+      "demo_caption": "簡約．輕巧．一目了然"
+    },
+    "header": {
+      "account": "帳戶",
+      "login": "登入",
+      "logout": "登出"
+    },
+    "footer": {
+      "disclaimer": "音樂數據、歌手相片及專輯封面由 Spotify 提供。Spotify 為 Spotify AB 嘅註冊商標，我哋與 Spotify AB 或其合作夥伴無任何從屬關係。",
+      "terms": "使用條款",
+      "privacy": "私隱政策",
+      "language": "語言"
+    },
+    "time_range": {
+      "last_1_month": "過去 1 個月",
+      "last_6_months": "過去 6 個月",
+      "last_12_months": "過去 12 個月"
+    },
+    "scroll_hint": {
+      "hint": "↓ 向下捲動繼續探索"
+    },
+    "function": {
+      "top_tracks": "歌曲排行榜",
+      "top_artists": "歌手排行榜",
+      "top_albums": "專輯排行榜",
+      "top_genres": "類型排行榜",
+      "top_eras": "年代排行榜"
+    },
+    "tracks": {
+      "title": "歌曲排行榜",
+      "spotify_logo_alt": "Spotify 標誌"
+    },
+    "albums": {
+      "title": "專輯排行榜",
+      "spotify_logo_alt": "Spotify 標誌"
+    },
+    "artists": {
+      "title": "歌手排行榜",
+      "popularity": "人氣指數",
+      "popularity_description": "歌手嘅人氣介乎 0 到 100，100 為最高人氣。此分數由 Spotify 提供。",
+      "unknown_genre": "未知",
+      "spotify_logo_alt": "Spotify 標誌"
+    },
+    "genres": {
+      "title": "類型排行榜",
+      "spotify_logo_alt": "Spotify 標誌"
+    },
+    "eras": {
+      "title": "年代排行榜",
+      "spotify_logo_alt": "Spotify 標誌"
+    },
+    "privacy": {
+      "title": "私隱政策",
+      "last_updated": "最後更新日期：2024 年 12 月 24 日",
+      "introduction": {
+        "title": "導言",
+        "content": "歡迎使用 Auralytics，我哋非常重視你嘅私隱。本政策會說明你使用本服務時，我哋如何收集、使用及保障你嘅個人資料。本平台為獨立應用，透過 Spotify API 提供數據洞察，並非 Spotify AB 或其合作夥伴之官方產品。\n\n使用本服務即表示你同意依據本政策收集及使用你嘅資料。"
+      },
+      "collect": {
+        "title": "我哋收集咩資料",
+        "personal_data": "1. 個人資料",
+        "personal_data_items": [
+          "電郵地址",
+          "Spotify 使用者 ID",
+          "API 存取權杖"
+        ],
+        "personal_data_footer": "我哋收集呢啲資料只係為咗提供核心功能同改善你嘅使用體驗，我哋唔會將你嘅資料出售、交易或轉讓畀第三方。",
+        "cookies": "2. Cookie",
+        "cookies_items": [
+          "必要 Cookie：網站正常運作所必需。",
+          "分析 Cookie：由第三方服務（例如 Google Analytics）提供，用於追蹤使用行為同改善服務。",
+          "廣告 Cookie：用於透過 Google Ads 等服務推送個人化廣告。"
+        ],
+        "cookies_footer": "你可以喺瀏覽器設定中管理或停用 Cookie，但可能會影響部分功能運作。"
+      },
+      "usage": {
+        "title": "我哋如何使用你嘅資料",
+        "items": [
+          "啟用同維持服務正常運作。",
+          "為你提供個人化使用體驗。",
+          "偵測、防止同解決安全或技術問題。",
+          "其他你同意或事前知情下嘅使用方式。"
+        ]
+      },
+      "thirdparty": {
+        "title": "第三方服務",
+        "items": [
+          "Spotify API：用於擷取並顯示你嘅 Spotify 資料。",
+          "Google Analytics：網站流量分析用途。",
+          "Google Ads：投放個人化廣告用途。"
+        ],
+        "footer": "請參閱相關服務供應商嘅私隱政策了解更多。"
+      },
+      "retention": {
+        "title": "資料保存",
+        "content": "你嘅資料只會喺我哋系統中保留 1 小時，之後會自動過期並刪除。"
+      },
+      "children": {
+        "title": "兒童私隱",
+        "content": "本服務唔適用於 18 歲以下人士，我哋唔會有意圖收集兒童資料，如你發現你子女提供咗個人資料，請即聯絡我哋，我哋會盡快處理。"
+      },
+      "accuracy": {
+        "title": "資料準確性聲明",
+        "content": "雖然我哋致力提供準確內容，但資料可能未能完全反映你實際嘅聽歌習慣，只供參考用途。"
+      },
+      "changes": {
+        "title": "私隱政策更新",
+        "content": "我哋可能會不時更新私隱政策，變更會張貼喺本頁並更新「最後更新日期」。你繼續使用服務即表示接受最新內容。"
+      },
+      "contact": {
+        "title": "聯絡我哋",
+        "content": "如果你對本政策有任何查詢，請電郵至 musicinsightsforspotify@gmail.com 與我哋聯絡。"
+      }
+    },
+    "terms": {
+      "title": "使用條款",
+      "last_updated": "最後更新日期：2024 年 12 月 24 日",
+      "introduction": {
+        "title": "導言",
+        "content": "歡迎使用 Auralytics。當你登入或使用本網站，即代表你同意遵守以下使用條款。如你唔接受任何條款，請唔好使用本服務。我哋提供 Spotify 相關數據嘅個人化展示，僅供非商業用途。我哋並非 Spotify AB 或其合作夥伴認可或贊助。"
+      },
+      "eligibility": {
+        "title": "使用資格",
+        "items": [
+          "使用者必須年滿 18 歲。",
+          "使用者需有有效 Spotify 帳戶。",
+          "使用者必須同意並遵守本條款及相關法律。"
+        ]
+      },
+      "responsibilities": {
+        "title": "使用者責任",
+        "intro": "你使用本服務即表示你同意：",
+        "items": [
+          "只作合法用途使用本服務，並遵守本條款。",
+          "提供真確、完整及最新嘅資料。"
+        ]
+      },
+      "prohibited": {
+        "title": "禁止行為",
+        "items": [
+          "未經許可修改、散播或重製網站內容。",
+          "利用本服務從事詐騙或非法行為。",
+          "轉售或將服務數據作商業用途。",
+          "干擾、攻擊或破壞網站或其服務。",
+          "使用自動工具（如爬蟲或機械人）收集網站數據。",
+          "濫用 Spotify API 所提供嘅資料。"
+        ]
+      },
+      "ip": {
+        "title": "知識產權",
+        "content": "本網站所有內容（包括設計、文字、圖片、標誌及程式碼）均屬 Auralytics 所有，受版權及知識產權法保護。",
+        "items": [
+          "未經授權不得複製、散佈或公開展示網站內容。",
+          "不得擅自使用 Auralytics 嘅商標或品牌。"
+        ]
+      },
+      "liability": {
+        "title": "責任限制",
+        "intro": "在法律容許範圍內：",
+        "items": [
+          "本服務係按「現況」及「可用」基礎提供，唔作任何明示或暗示保證。",
+          "我哋對任何損失概不負責，包括數據遺失、收入損失、服務中斷、技術問題或未經授權訪問你嘅資料。"
+        ]
+      },
+      "termination": {
+        "title": "終止使用",
+        "items": [
+          "如你違反本條款，我哋有權隨時終止你使用服務，恕不另行通知。",
+          "我哋保留隨時修改或終止本服務任何部分之權利。"
+        ]
+      },
+      "contact": {
+        "title": "聯絡我哋",
+        "content": "如對使用條款有任何查詢，請電郵至 musicinsightsforspotify@gmail.com 與我哋聯絡。"
+      }
+    }
+  }
+  
