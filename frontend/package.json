@@ -11,8 +11,12 @@
     "@types/react-dom": "^18.3.0",
     "axios": "^1.8.4",
     "cors": "^2.8.5",
+    "i18next": "^21.6.3",
+    "i18next-browser-languagedetector": "^8.0.4",
+    "i18next-http-backend": "^3.0.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-i18next": "^12.3.1",
     "react-icons": "^5.5.0",
     "react-router-dom": "^6.26.0",
     "react-scripts": "^5.0.1",
@@ -44,6 +48,8 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "ajv": "^8.17.1",
+    "ajv-keywords": "^5.1.0"
   }
 }

@@ -1,96 +1,55 @@
 .footer {
-  padding: 3px 220px 5px 220px;
+  padding: 15px 220px 6px 220px;
   color: #333;
   font-size: 14px;
   margin-top: 50px;
-  margin-bottom: 0;
+  background-color: white;
+  border-top: 1px solid #e6e6e6;
 }
 
-p{
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.trademark {
-  font-size: 12px;
-  color: #989797;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.content {
+.footer-grid {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end; 
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 6px;
 }
 
-.trade-mark-and-disclaimer {
-  text-align: left;
+.footer-left select {
   font-size: 12px;
   color: #989797;
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 2px 4px;
+  font-family: inherit;
 }
 
-.policy-and-trademark {
-  text-align: right;
-  padding-bottom: 3px;
+.footer-right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
 }
 
-.policy-and-trademark a {
+.footer-right a,
+.footer-right .trademark {
   color: #989797;
   font-size: 12px;
-  margin: 2px 0;
   text-decoration: none;
 }
 
-.policy {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #ffffff; 
-  width: 160px;
+.footer-right a:hover {
+  color: #5a5a5a;
 }
 
-.trademark {
+.footer-disclaimer {
   font-size: 12px;
-  margin: 0;
-}
-
-@media screen and (max-width: 600px)
-{
-  .footer {
-    padding: 3px 20px 5px 20px;
-    color: #333;
-    font-size: 14px;
-    margin-top: 50px;
-    margin-bottom: 0;
-  }
-  .trade-mark-and-disclaimer {
-    text-align: left;
-    font-size: 6px;
-    color: #989797;
-  }
-  .trademark {
-    font-size: 6px;
-    margin: 0;
-  }
-  .policy {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #ffffff; 
-    width: 80px;
-    font-size: 8px;
-  }
-  .policy-and-trademark a {
-    color: #989797;
-    font-size: 6px;
-    margin: 0px;
-    text-decoration: none;
-  }
-  .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end; 
-    gap: 20px;
-  }
+  color: #b3b3b3;
+  margin: 10px 0 0 0;
+  line-height: 1.5;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+  text-align: center;
 }

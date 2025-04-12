@@ -2,11 +2,13 @@ import React, { useState, useEffect } from 'react';
 import '../styles/Artists.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import TimeRangeSelector from '../components/TimeRangeSelector';
 import axios from 'axios';
 import { useAuth } from '../AuthContext'; 
 import { useNavigate } from 'react-router-dom';
 import { FaInfoCircle } from 'react-icons/fa';
 import spotifyLogo from '../image/Spotify_Primary_Logo_RGB_Black.png';
+import { useTranslation } from 'react-i18next';
 const BASE_URL = process.env.REACT_APP_BACKEND_URL;
 
 interface InfoModalProps {
@@ -45,6 +47,7 @@ const MostListenedArtists: React.FC = () => {
     const { isLoggedIn } = useAuth(); 
     const navigate = useNavigate();
     const [isModalVisible, setModalVisible] = useState(false);
+    const { t } = useTranslation();
 
     const fetchArtists = async (range: string) => {
         try {
@@ -88,30 +91,14 @@ const MostListenedArtists: React.FC = () => {
         <div>
             <Header />
             <div className="header2">
-                <h3>Top artists</h3>
-                <div className="time-range">
-                    <button
-                        onClick={() => handleRangeClick('short_term')}
-                        className={currentRange === 'short_term' ? 'active' : 'inactive'}
-                    >
-                        Last 1 month
-                    </button>
-                    <button
-                        onClick={() => handleRangeClick('medium_term')}
-                        className={currentRange === 'medium_term' ? 'active' : 'inactive'}
-                    >
-                        Last 6 months
-                    </button>
-                    <button
-                        onClick={() => handleRangeClick('long_term')}
-                        className={currentRange === 'long_term' ? 'active' : 'inactive'}
-                    >
-                        Last 12 months
-                    </button>
-                </div>
+                <h3>{t('artists.title')}</h3>
+                <TimeRangeSelector 
+                    currentRange={currentRange} 
+                    onRangeChange={handleRangeClick} 
+                />
             </div>
             <div className="info-session">
-                <h5 className="header-popularity">Popularity</h5>
+                <h5 className="header-popularity">{t('artists.popularity')}</h5>
                 <div 
                     className="info-icon-container" 
                     onMouseEnter={() => setModalVisible(true)} 
@@ -120,7 +107,7 @@ const MostListenedArtists: React.FC = () => {
                 >
                     {FaInfoCircle({ className: 'circle' })}
                     {isModalVisible && (
-                        <InfoModal text="The popularity of the artist is between 0 and 100, with 100 being the most popular. It is calculated from the popularity of all the artist's tracks." />
+                        <InfoModal text={t('artists.popularity_description')} />
                     )}
                 </div>
             </div>
@@ -138,7 +125,7 @@ const MostListenedArtists: React.FC = () => {
                         <a href={artist.logoUrl} target="_blank" rel="noopener noreferrer" className="spotify-logo-container">
                             <img 
                                 src={spotifyLogo} 
-                                alt="Spotify Logo" 
+                                alt={t('artists.spotify_logo_alt')}  
                                 className="spotify-logo" 
                             />
                         </a>

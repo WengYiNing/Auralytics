@@ -1,13 +1,47 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { Link } from 'react-router-dom';
 import Header from '../components/Header';
-import '../styles/App.css';
-import ScrollHint from '../components/ScrollHint'; 
-const BASE_URL = process.env.REACT_APP_BACKEND_URL;
+import Footer from '../components/Footer';
+import '../styles/LandingPage.css';
+import { useTranslation } from 'react-i18next';
+
+const functionList = [
+  {
+    image: "https://imgur.com/DDsfJVh.jpeg",
+    alt: "Top Tracks",
+    title: 'home.top_tracks_title',
+    desc: 'home.top_tracks_desc'
+  },
+  {
+    image: "https://imgur.com/uss6Xfu.jpeg",
+    alt: "Top Artists",
+    title: 'home.top_artists_title',
+    desc: 'home.top_artists_desc'
+  },
+  {
+    image: "https://imgur.com/lnaxdCk.jpeg",
+    alt: "Top Albums",
+    title: 'home.top_albums_title',
+    desc: 'home.top_albums_desc'
+  },
+  {
+    image: "https://imgur.com/ZCDqGW4.jpeg",
+    alt: "Top Genres",
+    title: 'home.top_genres_title',
+    desc: 'home.top_genres_desc'
+  },
+  {
+    image: "https://imgur.com/0ORZtMy.jpeg",
+    alt: "Top Eras",
+    title: 'home.top_eras_title',
+    desc: 'home.top_eras_desc'
+  },
+];
 
 const App: React.FC = () => {
   const boxesRef = useRef<HTMLDivElement | null>(null);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,88 +57,51 @@ const App: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const currentItem = functionList[currentIndex];
 
   return (
     <div>
       <Header />
-      <div className="start-content">
-        <p >
-          Discover your unique music story.
-          <br /><br />
-          Explore your top tracks, artists, albums, genres, and musical eras. Dive into your personalized Spotify insights!
+      <div className="demo-preview-container">
+        <img src="/logo-removebg.png" alt="Auralytics logo" className="home-logo" />
+        <p className="demo-subtitle">
+          {t('home.demo_subtitle') || "Here's an example of what you'll get after logging in."}
         </p>
-
-        <a href= {`${BASE_URL}/login`} className="please-login">
-          Login with your Spotify account to start...
-        </a>
+        <img
+          src="https://imgur.com/j2BGodl.png"
+          alt="Demo Preview"
+          className="demo-image"
+        />
+        <p className="demo-caption">
+          {t('home.demo_caption') || 'Genre breakdown, favorite tracks, and visual insights – personalized for you.'}
+        </p>
       </div>
-      <ScrollHint />
+      
       <div ref={boxesRef} className={`intro-function-content ${isScrolled ? 'visible' : ''}`}>
-                <div className="intro-item">
-                  <div className="intro-image-container">
-                    <img className="intro-image" src="https://imgur.com/5yoH2bf.jpeg" alt="Top Tracks"/>
-                  </div>  
-                  <div className='intro-words'>
-                    <p className='function-title'>Top tracks</p>
-                    <p>Instantly see your top 50 most-played tracks and relive the songs that build your vibe.</p>
-                  </div>
-                </div>
-                <div className="intro-item">
-                <div className="intro-image-container">
-                 <img className="intro-image" src="https://imgur.com/IQAajbk.jpeg" alt="Top Artists"/>
-                </div>
-                  <div className='intro-words'>
-                    <p className='function-title'>Top artists</p>
-                    <p>Explore your top 20 most-listened artists and see who’s been dominating your playlists.</p>
-                  </div>
-                </div>
-                <div className="intro-item">
-                <div className="intro-image-container">
-                  <img className="intro-image" src="https://imgur.com/ltQJcVc.jpeg" alt="Top Albums"/>
-                </div>
-                  <div className='intro-words'>
-                    <p className='function-title'>Top albums</p>
-                    <p>Dive into your top 10 most-listened albums and see what’s been on repeat.</p>
-                  </div>
-                </div>
-                <div className="intro-item">
-                <div className="intro-image-container">
-                  <img className="intro-image" src="https://imgur.com/eWtoR5D.jpeg" alt="Top Genres"/>
-                </div>
-                  <div className='intro-words'>
-                    <p className='function-title'>Top genres</p>
-                    <p>Discover your top 10 most-listened music genres and see which styles define your unique taste.</p>
-                  </div>
-                </div>
-                <div className="intro-item">
-                <div className="intro-image-container">
-                  <img className="intro-image" src="https://imgur.com/seRyHq6.jpeg" alt="Top Eras"/>
-                </div>
-                  <div className='intro-words'>
-                    <p className='function-title'>Top eras</p>
-                    <p>Discover your top 5 most-listened eras and reveal your music history.</p>
-                  </div>
-                </div>
-      </div>
-      <div className='index-footer'>
-        <div className="content">
-          <div className='trade-mark-and-disclaimer'>
-            <p>
-            Music data, artist images, and album covers are provided by Spotify. Spotify is a trademark of Spotify AB.<br />
-            We are not affiliated with Spotify AB or its partners, and our service is only intended for personal use of music data.
-            </p>
+        <div className="intro-item single">
+          <div className="intro-image-container">
+            <img className="intro-image" src={currentItem.image} alt={currentItem.alt} />
+          </div>  
+          <div className='intro-words'>
+            <p>{t(currentItem.desc)}</p>
           </div>
-          <div className='policy-and-trademark'>
-              <p className='trademark'>© 2025 Auralytics</p>
-              <div className= 'policy'>
-                <Link to="/TermsOfUse">Terms of Use</Link>
-                <Link to="/privacy">Privacy Policy</Link>
-                </div>
-              </div>
+        </div>
+        <div className="function-selector">
+          {['track', 'artist', 'album', 'genre', 'era'].map((key, idx) => (
+            <button
+              key={idx}
+              className={`selector-button ${currentIndex === idx ? 'active' : ''}`}
+              onClick={() => setCurrentIndex(idx)}
+            >
+              {t(`home.${key}`)}
+            </button>
+          ))}
         </div>
       </div>
+
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;

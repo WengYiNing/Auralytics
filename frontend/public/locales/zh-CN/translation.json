@@ -1,0 +1,74 @@
+{
+    "home": {
+      "intro": "发现你的独特音乐故事。\n\n浏览你最常听的歌曲、歌手、专辑、音乐类型和年代，深入了解你的 Spotify 音乐洞察！",
+      "login_prompt": "使用你的 Spotify 账号登录，立即开启探索之旅...",
+      "top_tracks_title": "热门歌曲",
+      "top_tracks_desc": "你最常播放的 50 首歌曲，定义你的音乐风格。",
+      "top_artists_title": "热门歌手",
+      "top_artists_desc": "你最常收听的 20 位歌手，看看谁占据了你的播放列表。",
+      "top_albums_title": "热门专辑",
+      "top_albums_desc": "你最常收听的 10 张专辑，哪些专辑被你反复播放？",
+      "top_genres_title": "热门类型",
+      "top_genres_desc": "你最常听的 10 种音乐类型，了解你的音乐偏好。",
+      "top_eras_title": "热门年代",
+      "top_eras_desc": "你最常听的 5 个年代，揭示你的音乐轨迹。",
+      "track": "歌曲",
+      "artist": "歌手",
+      "album": "专辑",
+      "genre": "类型",
+      "era": "年代",
+      "demo_title": "Auralytics",
+      "demo_subtitle": "歌曲、歌手、专辑、风格与年代，构建专属于你的聆听画像。",
+      "demo_caption": "简洁、轻量、清晰"
+    },
+    "header": {
+      "account": "账号",
+      "login": "登录",
+      "logout": "退出"
+    },
+    "footer": {
+      "disclaimer": "音乐数据、歌手图片和专辑封面由 Spotify 提供。Spotify 是 Spotify AB 的注册商标，本服务与 Spotify AB 或其合作方无任何关联。",
+      "terms": "使用条款",
+      "privacy": "隐私政策",
+      "language": "语言"
+    },
+    "time_range": {
+      "last_1_month": "最近 1 个月",
+      "last_6_months": "最近 6 个月",
+      "last_12_months": "最近 12 个月"
+    },
+    "scroll_hint": {
+      "hint": "↓ 向下滚动查看"
+    },
+    "function": {
+      "top_tracks": "歌曲排行",
+      "top_artists": "歌手排行",
+      "top_albums": "专辑排行",
+      "top_genres": "类型排行",
+      "top_eras": "年代排行"
+    },
+    "tracks": {
+      "title": "歌曲排行",
+      "spotify_logo_alt": "Spotify 标志"
+    },
+    "albums": {
+      "title": "专辑排行",
+      "spotify_logo_alt": "Spotify 标志"
+    },
+    "artists": {
+      "title": "歌手排行",
+      "popularity": "人气指数",
+      "popularity_description": "歌手人气在 0 到 100 之间，数值越高表示越受欢迎，数据来源于 Spotify。",
+      "unknown_genre": "未知",
+      "spotify_logo_alt": "Spotify 标志"
+    },
+    "genres": {
+      "title": "类型排行",
+      "spotify_logo_alt": "Spotify 标志"
+    },
+    "eras": {
+      "title": "年代排行",
+      "spotify_logo_alt": "Spotify 标志"
+    }
+  }
+  

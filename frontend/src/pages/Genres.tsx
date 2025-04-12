@@ -2,16 +2,19 @@ import React, { useState, useEffect } from 'react';
 import '../styles/Genres.css';  
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import TimeRangeSelector from '../components/TimeRangeSelector';
 import axios from 'axios';
 import { useAuth } from '../AuthContext';
 import { useNavigate } from 'react-router-dom';
 import spotifyLogo from '../image/Spotify_Primary_Logo_RGB_Black.png';
+import { useTranslation } from 'react-i18next';
 const BASE_URL = process.env.REACT_APP_BACKEND_URL;
 
 const MostListenedGenres: React.FC = () => {
     const [genres, setGenres] = useState<{ genre: string; score: number; logoUrl: string; artistImageUrl: string}[]>([]);
     const [currentRange, setCurrentRange] = useState<string>('short_term');
     const { isLoggedIn } = useAuth();
+    const { t } = useTranslation();
     const navigate = useNavigate();
 
     const fetchGenres = async (range: string) => {
@@ -58,21 +61,11 @@ const MostListenedGenres: React.FC = () => {
         <div>
             <Header />
             <div className="header2">
-                <h3>Top genres</h3>
-                <div className="time-range">
-                    <button onClick={() => handleRangeClick('short_term')}
-                            className={currentRange === 'short_term' ? 'active' : 'inactive'}>
-                        Last 1 month
-                    </button>
-                    <button onClick={() => handleRangeClick('medium_term')}
-                            className={currentRange === 'medium_term' ? 'active' : 'inactive'}>
-                        Last 6 months
-                    </button>
-                    <button onClick={() => handleRangeClick('long_term')}
-                            className={currentRange === 'long_term' ? 'active' : 'inactive'}>
-                        Last 12 months
-                    </button>
-                </div>
+                <h3>{t('genres.title')}</h3>
+                <TimeRangeSelector 
+                    currentRange={currentRange} 
+                    onRangeChange={handleRangeClick} 
+                />
             </div>
 
             <ul>
@@ -91,7 +84,7 @@ const MostListenedGenres: React.FC = () => {
                         <a href={genreData.logoUrl} target="_blank" rel="noopener noreferrer" className="spotify-logo-container">
                             <img 
                                 src={spotifyLogo} 
-                                alt="Spotify Logo" 
+                                alt={t('genres.spotify_logo_alt')} 
                                 className="spotify-logo" 
                             />
                         </a>
