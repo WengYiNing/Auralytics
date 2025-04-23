@@ -15,7 +15,7 @@ This repository contains the **open-source local version**, allowing developers 
 ## 📑 Table of Contents
 
 - [🗝️ Prerequisites: Obtaining Spotify Client ID & Client Secret](#️-prerequisites-obtaining-spotify-client-id--client-secret)
-- [💻 Technologies Used](#-technologies-used)
+- [💻 Tech Stack](#-tech-stack)
 - [🚀 Running the Project](#-running-the-project)
   - [Clone the repository](#clone-the-repository)
   - [Create the `.env` files](#create-the-env-files)
