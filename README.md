@@ -25,6 +25,9 @@ This repository contains the **open-source local version**, allowing developers 
 - [📩 Contact Us](#-contact-us)
 
 ---
+<p align="center">
+  <img src="assets/demo.png" alt="demo" width="800">
+</p>
 
 ## 🗝️ Prerequisites: Obtaining Spotify Client ID & Client Secret
 
