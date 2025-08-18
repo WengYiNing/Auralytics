@@ -26,7 +26,7 @@ This repository contains the **open-source local version**, allowing developers 
 
 ---
 <p align="center">
-  <img src="assets/demo.png" alt="demo" width="800">
+  <img src="assets/Auralytics landing page demo.png" alt="demo" width="800">
 </p>
 
 ## 🗝️ Prerequisites: Obtaining Spotify Client ID & Client Secret
