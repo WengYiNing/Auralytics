@@ -1,4 +1,6 @@
 # Auralytics
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) 
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE) 
 
 <p align="center">
   <img src="assets/logo.png" alt="Auralytics Logo" width="150">
