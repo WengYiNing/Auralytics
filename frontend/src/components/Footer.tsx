@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
           <a href="https://x.com/AuralyticsMusic" target="_blank" rel="noopener noreferrer">X</a>
           <Link to="/TermsOfUse">{t('footer.terms')}</Link>
           <Link to="/privacy">{t('footer.privacy')}</Link>
-          <span className="trademark">© 2025 Auralytics</span>
+          <span className="trademark">© 2026 Auralytics</span>
         </div>
       </div>
 
