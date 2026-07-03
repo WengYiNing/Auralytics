@@ -1,4 +1,6 @@
 # Auralytics
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) 
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE) 
 
 <p align="center">
   <img src="assets/logo.png" alt="Auralytics Logo" width="150">
@@ -26,7 +28,7 @@ This repository contains the **open-source local version**, allowing developers 
 
 ---
 <p align="center">
-  <img src="assets/demo.png" alt="demo" width="800">
+  <img src="assets/Auralytics landing page demo.png" alt="demo" width="800">
 </p>
 
 ## 🗝️ Prerequisites: Obtaining Spotify Client ID & Client Secret
